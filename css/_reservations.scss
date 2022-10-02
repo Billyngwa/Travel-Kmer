@@ -1,0 +1,100 @@
+body{
+    background:transparent;
+    position: relative;
+    p{
+        position: absolute;
+        text-align: center;
+        font-size: 17px;
+        margin-top: 130px;
+        left: 500px;
+        font-size: 26px;
+    }
+    form{
+        position: relative;
+        top: 200px;
+        left: 410px;
+        width: 500px;
+        padding: 55px 0px 65px 90px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 20px 8px rgba(0, 0, 0, 0.05);
+
+        // width: 30%;
+        // margin-left:35%;
+        
+        // max-width: 200px;
+        // height: 100vh;
+        .name_input{
+            input{
+                
+                border:none;
+                outline: none;
+                border-radius: 5px;
+               padding: 16px;
+               font-size: 20px;
+            //    background-color: none;
+               border-bottom: 3px solid rgba(129, 104, 155, 0.24);
+               &:focus{
+                    border-bottom: 3px solid rgba(128, 72, 188, 0.24);
+               }
+               &:hover{
+                    cursor: pointer;
+                    border: 2px solid rgba(128, 72, 188, 0.24) ;
+               }
+            }
+        }
+        .date{
+            display: flex;
+            justify-content: space-between;
+            label{
+                font-size: 17px;
+            }
+            input{
+                width: 50%;
+                font-size: 16px;
+            }
+            
+            margin: 30px 0px 15px 0px;
+            width: 278px;
+        }
+        .select_box{
+            width: 278px;
+            margin: 30px 0px 15px 0px;
+            #services{
+                width: 100%;
+                padding: 13px;
+                -webkit-appearance:none;
+                font-size: 16px;
+                text-align: center;
+                outline: none;
+                border-radius: 5px;
+                &:hover{
+                    box-shadow: 1px 2px 2px 8px rgba(0, 0, 0, 0.05);
+                    padding-bottom:4px ;
+                    transition: 1s;
+                }
+                option{
+                    font-size: 16px;
+                }
+            }
+        }
+        .submit{
+            width:150px;
+            margin: 40px 0px 0px 60px;
+            button{
+                width: 100%;
+                background-color: rgba(128, 72, 188, 0.24) ;
+                padding: 12px ;
+                outline: none;
+                border-radius: 10px;
+                border: none;
+                font-size: 17px;
+                color: aliceblue;
+                cursor: pointer;
+                &:hover{
+                    background-color: black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

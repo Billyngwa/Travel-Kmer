@@ -8,12 +8,15 @@
     <title>ANOC-AVA</title>
 </head>
 <body>
-        <form action="#" method="post">
+        <P>Make your Reservation with us </P>
+        <form action="pages/services.html" method="post">
             <div class="name_input">
-                <input type="text" id="username" placeholder="Name goes here"/>
+                <input type="text" id="username" placeholder="Client Name" required="required"/>
             </div>
             <div class="select_box">
                 <select name="available services" id="services">
+                    
+                    <option value="" disabled selected hidden>choose a service</option>
                     <option value="manicure">Manicure</option>
                     <option value="pedicure">pedicure</option>
                     <option value="physiotherapy">Physiotherapy</option>
@@ -23,6 +26,11 @@
                     <option value="tint">Hair Tint</option>
                     <option value="sales">Sales</option>
                 </select>
+            </div>
+            
+            <div class="date">
+                <label for="date">Save the date:</label>
+                <input type="date" required="required"/>
             </div>
             <div class="submit">
                 <button class="submit_btn">Make reservation</button>
