@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header section.header_logo nav.logo_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #99C2EC;
+  /* position: fixed; */
+}
+header section.header_logo nav.logo_nav .div_logo {
+  display: flex;
+  align-items: center;
+}
+header section.header_logo nav.logo_nav .div_logo .election_description {
+  margin: 0px 0px 0px 20px;
+  font-size: 20px;
+}
+header section.header_logo nav.logo_nav .div_login {
+  margin: 0px 20px 0px 0px;
+  border-left: 2px solid gray;
+  height: 118px;
+}
+header section.header_logo .evs span {
+  font-size: 60px;
+  color: navy;
+  margin: 40px 0px 0px 130px;
+  background-color: aliceblue;
+}
+
+main section.main_section .form_div {
+  width: 60%;
+  background-color: aliceblue;
+  margin: 100px 0px 0px 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main section.main_section .form_div label {
+  margin: 40px 0px 0px 60px;
+}
+main section.main_section .form_div form p input[type=text], main section.main_section .form_div form p input[type=password], main section.main_section .form_div form p input[type=email] {
+  border: aliceblue;
+  border-bottom: 1px solid lightgray;
+  background-color: aliceblue;
+  outline: none;
+  width: 75%;
+  margin: 40px 0px 0px 60px;
+  font-size: 20px;
+}
+main section.main_section .form_div form p input[type=text]:focus, main section.main_section .form_div form p input[type=text]:hover, main section.main_section .form_div form p input[type=password]:focus, main section.main_section .form_div form p input[type=password]:hover, main section.main_section .form_div form p input[type=email]:focus, main section.main_section .form_div form p input[type=email]:hover {
+  border-bottom: 1px solid navy;
+}
+main section.main_section .form_div form button.signup_btn {
+  position: relative;
+  top: 3px;
+  left: 390px;
+  background-color: rgb(32, 117, 177);
+  font-size: 25px;
+  color: aliceblue;
+  margin: 30px 0px 50px 0px;
+  padding: 10px;
+  border: rgb(32, 117, 177);
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ************************** end of general styles ************************ */
+/* ****************************end of header styles**************************** *//*# sourceMappingURL=style.css.map */
