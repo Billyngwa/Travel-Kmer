@@ -12,41 +12,40 @@ ul {
   list-style-type: none;
 }
 
-header section.header_logo nav.logo_nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #99C2EC;
-  /* position: fixed; */
+@media (max-width: 1200px) {
+  header div.bus_logo {
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form_div form button.signup_btn {
+    margin-left: 42.5%;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(18, 27, 34);
+  }
 }
-header section.header_logo nav.logo_nav .div_logo {
-  display: flex;
-  align-items: center;
-}
-header section.header_logo nav.logo_nav .div_logo .election_description {
-  margin: 0px 0px 0px 20px;
-  font-size: 20px;
-}
-header section.header_logo nav.logo_nav .div_login {
-  margin: 0px 20px 0px 0px;
-  border-left: 2px solid gray;
-  height: 118px;
-}
-header section.header_logo .evs span {
-  font-size: 60px;
-  color: navy;
-  margin: 40px 0px 0px 130px;
-  background-color: aliceblue;
+header div.bus_logo {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 main section.main_section .form_div {
+  position: relative;
   width: 60%;
   background-color: aliceblue;
-  margin: 100px 0px 0px 20%;
+  margin: 10px 0px 0px 20%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 main section.main_section .form_div label {
   margin: 40px 0px 0px 60px;
+}
+main section.main_section .form_div form {
+  width: 95%;
+  margin-left: 2.5%;
 }
 main section.main_section .form_div form p input[type=text], main section.main_section .form_div form p input[type=password], main section.main_section .form_div form p input[type=email] {
   border: aliceblue;
@@ -54,26 +53,43 @@ main section.main_section .form_div form p input[type=text], main section.main_s
   background-color: aliceblue;
   outline: none;
   width: 75%;
-  margin: 40px 0px 0px 60px;
+  margin: 30px 0px 0px 12%;
   font-size: 20px;
 }
 main section.main_section .form_div form p input[type=text]:focus, main section.main_section .form_div form p input[type=text]:hover, main section.main_section .form_div form p input[type=password]:focus, main section.main_section .form_div form p input[type=password]:hover, main section.main_section .form_div form p input[type=email]:focus, main section.main_section .form_div form p input[type=email]:hover {
   border-bottom: 1px solid navy;
 }
 main section.main_section .form_div form button.signup_btn {
-  position: relative;
-  top: 3px;
-  left: 390px;
+  margin-left: 42.5%;
+  margin-top: 20px;
+  margin-bottom: 30px;
   background-color: rgb(32, 117, 177);
   font-size: 25px;
   color: aliceblue;
-  margin: 30px 0px 50px 0px;
-  padding: 10px;
+  padding: 6px;
   border: rgb(32, 117, 177);
   border-radius: 5px;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* ************************** end of general styles ************************ */
-/* ****************************end of header styles**************************** *//*# sourceMappingURL=style.css.map */
+main section.main_section .form_div div.signup_container {
+  position: absolute;
+  right: 20px;
+  bottom: 2px;
+  padding: 1px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+main section.main_section .form_div div.signup_container button {
+  background-color: transparent;
+  padding: 10px;
+  border: rgb(32, 117, 177);
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgb(32, 117, 177);
+}
+main section.main_section .form_div div.signup_container button a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
