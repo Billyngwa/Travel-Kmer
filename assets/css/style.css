@@ -12,19 +12,6 @@ ul {
   list-style-type: none;
 }
 
-@media (max-width: 1200px) {
-  header div.bus_logo {
-    margin-left: 20%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .form_div form button.signup_btn {
-    margin-left: 42.5%;
-    font-size: 20px;
-    padding: 3px;
-    background-color: rgb(18, 27, 34);
-  }
-}
 header div.bus_logo {
   width: 20%;
   margin-left: 40%;
@@ -37,11 +24,18 @@ main section.main_section .form_div {
   position: relative;
   width: 60%;
   background-color: aliceblue;
-  margin: 10px 0px 0px 20%;
+  margin: -20px 0px 0px 20%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-main section.main_section .form_div label {
-  margin: 40px 0px 0px 60px;
+main section.main_section .form_div label.signup_label {
+  margin: 40px 0px 0px 35%;
+}
+main section.main_section .form_div p.signup_warning {
+  width: 90%;
+  margin-left: 5%;
+}
+main section.main_section .form_div p.signup_warning small {
+  text-align: center;
 }
 main section.main_section .form_div form {
   width: 95%;
@@ -58,6 +52,9 @@ main section.main_section .form_div form p input[type=text], main section.main_s
 }
 main section.main_section .form_div form p input[type=text]:focus, main section.main_section .form_div form p input[type=text]:hover, main section.main_section .form_div form p input[type=password]:focus, main section.main_section .form_div form p input[type=password]:hover, main section.main_section .form_div form p input[type=email]:focus, main section.main_section .form_div form p input[type=email]:hover {
   border-bottom: 1px solid navy;
+}
+main section.main_section .form_div form p input[type=checkbox] {
+  margin: 20px 0px 0px 12%;
 }
 main section.main_section .form_div form button.signup_btn {
   margin-left: 42.5%;
@@ -77,7 +74,6 @@ main section.main_section .form_div div.signup_container {
   right: 20px;
   bottom: 2px;
   padding: 1px;
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
 }
 main section.main_section .form_div div.signup_container button {
   background-color: transparent;
@@ -92,4 +88,26 @@ main section.main_section .form_div div.signup_container button a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: aliceblue;
   font-size: 16px;
+}
+main section.main_section .form_div .reset_pwd {
+  padding: 0px 0px 15px 20px;
+}
+main section.main_section .form_div .reset_pwd a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  header div.bus_logo {
+    width: 10%;
+    margin-left: 20%;
+    margin-top: -30px;
+    background-color: red;
+  }
+  .form_div form button.signup_btn {
+    margin-left: 42.5%;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(18, 27, 34);
+  }
 }/*# sourceMappingURL=style.css.map */

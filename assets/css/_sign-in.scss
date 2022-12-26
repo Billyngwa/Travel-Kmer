@@ -1,22 +1,4 @@
-@media (max-width:1200px) {
-    header{
-        div.bus_logo{
-            margin-left: 20%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
-    .form_div{
-     form{
-         button.signup_btn{
-             margin-left: 42.5%;
-             font-size: 20px;
-             padding: 3px;
-             background-color: rgb(18, 27, 34);
-         }
-     }
-    }
- }
+
 //  @media (max-width:750px) {
 //      button.signup_btn{
 //          width: 15%;
@@ -38,13 +20,19 @@ main{
     section.main_section{
         .form_div{
             position: relative;
-            label{
-                
-                margin: 40px 0px 0px 60px;
+            label.signup_label{
+                margin: 40px 0px 0px 35%;
+            }
+            p.signup_warning{
+                width: 90%;
+                margin-left: 5%;
+                small{
+                    text-align: center;
+                }
             }
             width: 60%;
             background-color:aliceblue;
-            margin: 10px 0px 0px 20%;
+            margin: -20px 0px 0px 20%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             form{
                 width: 95%;
@@ -61,6 +49,10 @@ main{
                         &:focus, &:hover{
                             border-bottom: 1px solid navy;
                         }
+                    }
+                    input[type="checkbox"]{
+                        
+                        margin: 20px 0px 0px 12%;
                     }
                 }
                 button.signup_btn{
@@ -84,7 +76,6 @@ main{
                 right: 20px;
                 bottom: 2px;
                 padding: 1px;
-                box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
                 button{
                     background-color: transparent;
                     padding: 10px;
@@ -100,6 +91,33 @@ main{
                     }
                 }
             }
+            .reset_pwd{
+                padding: 0px 0px 15px 20px;
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
+@media (max-width:500px) {
+    header{
+        div.bus_logo{
+            width: 10%;
+            margin-left: 20%;
+            margin-top: -30px;
+            background-color: red;
+        }
+    }
+    .form_div{
+     form{
+         button.signup_btn{
+             margin-left: 42.5%;
+             font-size: 20px;
+             padding: 3px;
+             background-color: rgb(18, 27, 34);
+         }
+     }
+    }
+ }
