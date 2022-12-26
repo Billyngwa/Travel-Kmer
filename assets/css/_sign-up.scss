@@ -1,0 +1,82 @@
+
+  
+    .form_div{
+        label.signup_label{
+            width: 20%;
+            margin-left: 30%;
+            font-size: 16px;
+        }
+        p.signup_warning{
+            width: 90%;
+            margin-left: 5%;
+            small{
+                text-align: center;
+            }
+        }
+      width: 90% !important;
+      margin-left: 5% !important;
+        form{
+            p{
+                input[type="text"],input[type="password"],input[type="email"]{
+                    border:aliceblue;
+                    border-bottom: 1px solid lightgray;
+                    background-color:aliceblue;
+                    outline: none;
+                    width:100% !important;
+                    margin-left: 0% !important;
+                    margin-top: 30px;
+                    font-size: 20px;
+                    &:focus, &:hover{
+                        border-bottom: 1px solid navy;
+                    }
+                }
+                input[type="checkbox"]{
+                    margin-left: 0% !important;
+                    margin-top: 20px;
+                }
+            }
+            button.signup_btn{
+                // width: 15%;
+                margin-left: 5%;
+
+                margin-top: 10px !important;
+                margin-bottom: 10px !important;
+                background-color: rgb(32, 117, 177);
+                font-size: 14px !important;
+                color: aliceblue;
+                padding: 2px !important;
+                border:rgb(32, 117, 177);
+                border-radius: 5px;
+                box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        div.signup_container{
+            // position: absolute;
+            // right: 20px;
+            // bottom: 2px;
+            padding: 1px;
+            button{
+                background-color: transparent;
+                padding: 2px !important;
+                border:rgb(32, 117, 177);
+                border-radius: 5px;
+                box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+                background-color: rgb(32, 117, 177);
+                a{
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: aliceblue;
+                    font-size: 14px !important;
+                }
+            }
+        }
+        .reset_pwd{
+            padding: 0px 0px 15px 20px;
+            a{
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+    }
+ 

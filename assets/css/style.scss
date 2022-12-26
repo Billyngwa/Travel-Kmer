@@ -1,2 +1,5 @@
 @import './settings/reset';
 @import './sign-in';
+@media (max-width:750px){
+    @import './sign-up';
+}
