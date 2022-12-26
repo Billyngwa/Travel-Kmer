@@ -83,7 +83,30 @@ main{
                 padding: 1px;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                // align-items: center;
+                button{
+                    background-color: transparent;
+                    padding: 10px;
+                    border:rgb(32, 117, 177);
+                    border-radius: 5px;
+                    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+                    background-color: rgb(32, 117, 177);
+                    
+                    a{
+                        text-decoration: none;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: aliceblue;
+                        font-size: 16px;
+                    }
+                }
+            }
+            
+            div.signin_container{
+                // position: absolute;
+                // right: 20px;
+                // bottom: 2px;
+                padding: 1px;
+                float: right;
                 button{
                     background-color: transparent;
                     padding: 10px;

@@ -76,7 +76,6 @@ main section.main_section .form_div div.signup_container {
   padding: 1px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 main section.main_section .form_div div.signup_container button {
   background-color: transparent;
@@ -87,6 +86,24 @@ main section.main_section .form_div div.signup_container button {
   background-color: rgb(32, 117, 177);
 }
 main section.main_section .form_div div.signup_container button a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 16px;
+}
+main section.main_section .form_div div.signin_container {
+  padding: 1px;
+  float: right;
+}
+main section.main_section .form_div div.signin_container button {
+  background-color: transparent;
+  padding: 10px;
+  border: rgb(32, 117, 177);
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgb(32, 117, 177);
+}
+main section.main_section .form_div div.signin_container button a {
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: aliceblue;
@@ -147,6 +164,23 @@ main section.main_section .form_div .reset_pwd a {
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+  .form_div div.signin_container {
+    padding: 1px;
+  }
+  .form_div div.signin_container button {
+    background-color: transparent;
+    padding: 10px;
+    border: rgb(32, 117, 177);
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgb(32, 117, 177);
+  }
+  .form_div div.signin_container button a {
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+  }
   .form_div div.signup_container {
     padding: 1px;
   }
@@ -158,17 +192,20 @@ main section.main_section .form_div .reset_pwd a {
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
     background-color: rgb(32, 117, 177);
   }
+  .form_div div.signup_container button span {
+    font-size: 13px !important;
+  }
   .form_div div.signup_container button a {
     text-decoration: none;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
   .form_div .reset_pwd {
     padding: 0px 0px 15px 20px;
   }
   .form_div .reset_pwd a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px !important;
   }
 }/*# sourceMappingURL=style.css.map */
