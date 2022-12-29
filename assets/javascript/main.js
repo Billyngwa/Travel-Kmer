@@ -1,10 +1,12 @@
 const checkBox = document.querySelector('input#pwd_display');
-const passwordField  = document.querySelector('input.password_field');
+let passwordField  = document.querySelector('#password_field');
 
 checkBox.addEventListener('click', event => {
-    checkBox.classList.add('check');
-    passwordField.classList.add('check');
+    checkBox.classList.toggle('check');
+    passwordField.classList.toggle('check');
+    if(passwordField.classList.contains('check')){
+          passwordField.type = 'text';
+    }else{
+          passwordField.type = 'password';
+    }
 });
-if(passwordField.classList.contains('.check')){
-    passwordField.style.type = 'text';
-}
