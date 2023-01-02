@@ -1,0 +1,21 @@
+//this mixin is used as a container for any element. two parameters are used; the width and margin-left.
+@mixin container($width,$margin-left){
+    width: $width;
+    margin-left: $margin-left;
+}
+// this mixin is used for flex rules when displaying elements.
+@mixin display-element-flex($align,$justify-content){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify-content;
+}
+@mixin input-and-button{
+    outline: none;
+    background-color: adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+}
+// this mixin is to style any text on the app. it takes parameters like font-weight and font-size
+@mixin text-style($font-size,$font-weight){
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
