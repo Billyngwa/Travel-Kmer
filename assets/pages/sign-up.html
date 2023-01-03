@@ -12,6 +12,42 @@
     <title>sign up</title>
 </head>
 <body>
+    <section class="form_container">
+        <div class="green_sign sign_up">
+            <div class="content">
+                <h1 class="welcome-notice">Welcome Back!</h1>
+                <p class="heading_description">To keep connected with us, please login with your personal info </p>
+                <button class="signin_link" type="button"><a href="./sign-in.html">SIGN IN</a></button>
+            </div>
+        </div>
+        <div class="white_sign">
+            <h1 class="create_account">Create Acount</h1>
+            <ul class="social_media_acounts">
+                <li class="social_media facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="social_media google"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li class="social_media linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+            <p class="description">or use your email for registration</p>
+            <form action="#" method="post">
+                <p class="username">
+                    <i class="fa-regular fa-user"></i>
+                    <!-- icon sits here -->
+                    <input type="text" name="Username" id="user-name" class="name_holder" placeholder="name"/>
+                </p>
+                <p class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <!-- icon sits here -->
+                    <input type="email" name="email" id="email" class="email_holder" placeholder="email"/>
+                </p>
+                <p class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <!-- icon sits here -->
+                    <input type="password" name="password" id="password" class="password_holder" placeholder="password"/>
+                </p>
+                <button class="signup_btn" type="button">SIGN UP</button>
+            </form>
+        </div>
+    </section>
     <script src="../javascript/main.js"></script>
 </body>
 </html>

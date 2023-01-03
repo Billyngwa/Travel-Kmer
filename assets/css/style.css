@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +11,151 @@ button {
 
 ul {
   list-style-type: none;
+}
+
+section.form_container {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+section.form_container div.green_sign {
+  width: 40%;
+  height: 100vh;
+  background-color: #21C177;
+}
+section.form_container div.green_sign .content {
+  margin-top: 25vh;
+  width: 70%;
+  margin-left: 15%;
+}
+section.form_container div.green_sign .content h1.welcome-notice {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+section.form_container div.green_sign .content p.heading_description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+section.form_container div.green_sign .content .signin_link {
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 15px 65x 15px 65px;
+  margin: 40px 0px 0px 0px;
+  width: 70%;
+  margin-left: 15%;
+}
+section.form_container div.green_sign .content .signin_link a {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+section.form_container div.white_sign {
+  width: 60%;
+  background-color: white;
+  height: 100vh;
+  padding-top: 15vh;
+}
+section.form_container div.white_sign h1.create_account {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #21C177;
+  text-align: center;
+}
+section.form_container div.white_sign ul {
+  gap: 3%;
+  width: 25%;
+  margin-left: 35%;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+section.form_container div.white_sign ul li {
+  width: 30%;
+  padding: 5px 0px 5px 10px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+section.form_container div.white_sign ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+section.form_container div.white_sign p.description {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #AAC4BC;
+  text-align: center;
+  padding-top: 20px;
+}
+section.form_container div.white_sign form {
+  width: 60%;
+  margin-left: 20%;
+}
+section.form_container div.white_sign form p {
+  background-color: rgba(170, 196, 188, 0.1294117647);
+  margin: 10px 0px 10px 0px;
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  align-items: center;
+}
+section.form_container div.white_sign form p input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+section.form_container div.white_sign form p input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #AAC4BC;
+  padding-left: 10px;
+}
+section.form_container div.white_sign form p input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #AAC4BC;
+  padding-left: 10px;
+}
+section.form_container div.white_sign form p input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #AAC4BC;
+  padding-left: 10px;
+}
+section.form_container div.white_sign form p i {
+  color: #AAC4BC;
+}
+section.form_container div.white_sign form button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 25px;
+  margin-left: 25%;
+  background-color: #21C177;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  padding: 10px 70px 10px 70px;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

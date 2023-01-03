@@ -9,13 +9,15 @@
     align-items: $align;
     justify-content: $justify-content;
 }
-@mixin input-and-button{
+@mixin input-and-button ($border){
     outline: none;
-    background-color: adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+    border: $border;
+    background-color: transparent;
 }
 // this mixin is to style any text on the app. it takes parameters like font-weight and font-size
-@mixin text-style($font-size,$font-weight){
+@mixin text-style($font-size,$font-weight,$color){
     font-family: $font-family;
     font-size: $font-size;
     font-weight: $font-weight;
+    color:$color;
 }
