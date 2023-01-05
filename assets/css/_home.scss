@@ -1,0 +1,92 @@
+body{
+background-color: rgb(255, 247, 247);
+}
+header{
+    // @include container(80%,10%);
+    // background-color: green;
+    div.navigation{
+        width: 100%;
+        position: fixed;
+        margin-top: 2px;
+        div.logo-nav-user{
+            background-color: $green;
+            @include display-element-flex(center,space-between);
+           @include container(80%,10%);
+            div.logo{
+                width: 50px;
+                height: 50px;
+                border-radius: 5%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                }
+            }
+            div.nav-user-lang{
+                margin: 0px 60px 0px 0px;
+                @include display-element-flex(center,space-between);
+                nav{
+                    ul{
+                        @include display-element-flex(center,space-between);
+                        li{
+                            margin: 0px 40px 0px 0px;
+                            a{
+                                @include text-style(16px,400,white);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .user{
+                    button{
+                    @include input-and-button(none);
+                    padding: 10px;
+                    margin: 0px 0px 0px 0px;
+                    border-radius: 10px;
+                        a{
+                            @include text-style(16px,400,white);
+                            text-decoration: none;
+                        }
+                    }
+                }
+                div.language-dropdown{
+                    margin-left: 20px;
+                    position: relative;
+                    &:hover {
+                        .absolute{
+                            display: block;
+                        }
+                        span i{
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .auto-change{
+                        @include display-element-flex(center,space-between);
+                        @include text-style(16px,400,white);
+                        text-decoration: none;
+                        span{
+                            margin-left: 10px;
+                        }
+                    }   
+                     .absolute{
+                        position: absolute;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.356);
+                        display: none;
+                        padding: 30px;
+                        button{
+                            @include text-style(16px,400,null);
+                            @include input-and-button(none);
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.banner-section{
+        padding: 150px 0px 0px 0px;
+    }
+}

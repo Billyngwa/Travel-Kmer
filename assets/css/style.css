@@ -13,6 +13,113 @@ ul {
   list-style-type: none;
 }
 
+body {
+  background-color: rgb(255, 247, 247);
+}
+
+header div.navigation {
+  width: 100%;
+  position: fixed;
+  margin-top: 2px;
+}
+header div.navigation div.logo-nav-user {
+  background-color: #21C177;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+header div.navigation div.logo-nav-user div.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5%;
+}
+header div.navigation div.logo-nav-user div.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang {
+  margin: 0px 60px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang nav ul li {
+  margin: 0px 40px 0px 0px;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang nav ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang .user button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 10px;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang .user button a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown {
+  margin-left: 20px;
+  position: relative;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:hover .absolute {
+  display: block;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:hover span i {
+  transform: rotate(180deg);
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .auto-change {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .auto-change span {
+  margin-left: 10px;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .absolute {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.356);
+  display: none;
+  padding: 30px;
+}
+header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .absolute button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+header div.banner-section {
+  padding: 150px 0px 0px 0px;
+}
+
 section.form_container {
   width: 80%;
   margin-left: 10%;
