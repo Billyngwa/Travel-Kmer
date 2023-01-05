@@ -49,6 +49,7 @@ signupButton.addEventListener('click', event =>{
       window.localStorage.setItem('User',JSON.stringify(arrayObject));
       formElement.reset();
 });
+
 signInCheckBox.addEventListener('click', event => {
       signInCheckBox.classList.toggle('check');
       signInPasswordField.classList.toggle('check');

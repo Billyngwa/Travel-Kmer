@@ -13,38 +13,399 @@
 </head>
 <body>
     <header>
-        <section class="hero">
-            <div class="hero-color">
-                <div class="header-content">
-                    <div class="logo-nav-user">
-                        <div class="logo">
-                            <img src="" alt="">
+        <div class="logo-nav-user">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Journey</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <button class="signin"><a href="./assets/pages/sign-in.html">Sign In</a></button>
+                <button class="signup"><a href="./assets/pages/sign-up.html">Sign Up</a></button>
+            </div>
+            <div class="language-dropdown">
+                <p class="auto-change">Eng <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                <div class="absolute">
+                    <button type="button">Eng</button>
+                    <button type="button">Fr</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner-section">
+            <div class="left-side">
+                <h3 class="best-destinations">Best Destinations around the Nation</h3>
+                <h1 class="banner-text">
+                    Reserve and Travel,Live a new and Full live
+                </h1>
+                <p class="banner-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in neque possimus quibusdam, 
+                    porro impedit quaerat eius totam
+                     tenetur illum dolorem, exercitationem consectetur nostrum odio quo? Similique assumenda excepturi in!
+                </p>
+                <div class="findout"><button><a href="#">Find Out More</a></button></div>
+            </div>
+            <div class="right-side">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="category">
+            <h3 class="category">Category</h3>
+            <h1 class="best-services">We Offer Best Services</h1>
+            <ul class="category-of-services">
+                <li>
+                    <!-- icon goes here  -->
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <h1 class="service-type">Reservation</h1>
+                    <p class="service-description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </li>
+                <li>
+                    <!-- icon goes here  -->
+                    <i class="fa-regular fa-user"></i>
+                    <h1 class="service-type">User Experience</h1>
+                    <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </li>
+                <li>
+                    <!-- icon goes here  -->
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h1 class="service-type">Local Events</h1>
+                    <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </li>
+                <li>
+                    <!-- icon goes here  -->
+                    <i class="fa-brands fa-intercom"></i>
+                    <h1 class="service-type">Customization</h1>
+                    <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="top-selling">
+            <h3 class="top-selling">Top-selling</h3>
+            <h1 class="frequent-destinations">Top Routes</h1>
+            <!-- These top routes act like a slider with a view of 3 per slide -->
+            <div class="routes">
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
                         </div>
-                        <nav>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Reservation</a></li>
-                                <li><a href="#">Mail</a></li>
-                                <li><a href="#">Journey</a></li>
-                                <li><a href="#">Help</a></li>
-                            </ul>
-                        </nav>
-                        <div class="user">
-                            <button class="signin"><a href="#">Sign In</a></button>
-                            <button class="signup"><a href="#">Sign Up</a></button>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
                         </div>
                     </div>
-                    <div class="banner">
-                        <h1 class="banner-info">Wish you a happy and comfortable Journey</h1>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
                     </div>
-                    div.quick-search
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                </div>
+                <div class="each-route">
+                    <div class="images-holder">
+                        <div class="image-container">
+                            <img src="./images/yaounde-1.jpg" alt="">
+                        </div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div class="image-container">
+                            <img src="./images/douala.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="route-description">Yaounde-Douala <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
                 </div>
             </div>
         </section>
-    </header>
-    <main></main>
-    <footer></footer>
+        <section class="reservation-procedures">
+            <div class="left">
+                <h3 class="easy-and-fast">Easy and Fast</h3>
+                <h1 class="booking">Book your trip in 3 easy steps</h1>
+                <div class="procedures">
+                    <div class="procedure first-procedure">
+                        <p class="icon"><i class="fa-solid fa-road-barrier"></i></p>
+                        <p class="procedure">
+                            <h1>Choose Destination</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis.</p>
+                        </p>
+                    </div>
+                    <div class="procedure second-procedure">
+                        <p class="icon"><i class="fa-solid fa-money-bill-transfer"></i></p>
+                        <p class="procedure">
+                            <h1>Make Payment</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis.</p>
+                        </p>
+                    </div>
+                    <div class="procedure third-procedure">
+                        <p class="icon"><i class="fa-solid fa-route"></i></p>
+                        <p class="procedure">
+                            <h1>Reach Agency on scheduled Time and Date</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-holder">
+                    <img src="./images/access-bank.jfif" alt="">
+                </div>
+            </div>
+            <div class="trip-suggestion">
+                <!-- this feature is just to increase user experience -->
+                <!-- in javascript this feature is a random picker for any account or mmaybe not random but has to show a trip and its features -->
+                <div class="fast-trip">
+                    <h1 class="trip">Trip to YAOUNDE</h1>
+                    <p class="trip-description"> <span><i class="fa-solid fa-hourglass-start"></i> 5 hours</span></p>
+                    <p class="number-of-people-tripping">24 people going</p>
+                </div>
+                <p class="reserve"><a href="#">Take this Journey?</a></p>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="headings">
+                <h3>Testimonials</h3>
+                <h1>What People Say about us</h1>
+            </div>
+            <div class="testimonies">
+                <div class="testimony">
+                    <div class="testifier-photo">
+                        <img src="" alt="testifiers photo">
+                    </div>
+                    <div class="testimony-content">
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde 
+                            provident tenetur autem commodi beatae qui asperiores consequuntur. Nemo alias animi vel impedit?
+                        </p>
+                        <p class="testifier-name">
+                            <h1 class="name">Mike Taylor</h1>
+                            <span>CEO at Red Button</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testifier-photo">
+                        <img src="" alt="testifiers photo">
+                    </div>
+                    <div class="testimony-content">
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde 
+                            provident tenetur autem commodi beatae qui asperiores consequuntur. Nemo alias animi vel impedit?
+                        </p>
+                        <p class="testifier-name">
+                            <h1 class="name">Mike Taylor</h1>
+                            <span>CEO at Red Button</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testifier-photo">
+                        <img src="" alt="testifiers photo">
+                    </div>
+                    <div class="testimony-content">
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde 
+                            provident tenetur autem commodi beatae qui asperiores consequuntur. Nemo alias animi vel impedit?
+                        </p>
+                        <p class="testifier-name">
+                            <h1 class="name">Mike Taylor</h1>
+                            <span>CEO at Red Button</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testifier-photo">
+                        <img src="" alt="testifiers photo">
+                    </div>
+                    <div class="testimony-content">
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde 
+                            provident tenetur autem commodi beatae qui asperiores consequuntur. Nemo alias animi vel impedit?
+                        </p>
+                        <p class="testifier-name">
+                            <h1 class="name">Mike Taylor</h1>
+                            <span>CEO at Red Button</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testifier-photo">
+                        <img src="" alt="testifiers photo">
+                    </div>
+                    <div class="testimony-content">
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde 
+                            provident tenetur autem commodi beatae qui asperiores consequuntur. Nemo alias animi vel impedit?
+                        </p>
+                        <p class="testifier-name">
+                            <h1 class="name">Mike Taylor</h1>
+                            <span>CEO at Red Button</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="active-partners">
+                <div class="partners-logo">
+                    <img src="" alt="partner's logo">
+                </div>
+                <div class="partners-logo">
+                    <img src="" alt="partner's logo">
+                </div>
+                <div class="partners-logo">
+                    <img src="" alt="partner's logo">
+                </div>
+                <div class="partners-logo">
+                    <img src="" alt="partner's logo">
+                </div>
+                <div class="partners-logo">
+                    <img src="" alt="partner's logo">
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-subscription">
+            <h1>Subscribe to get latest new, information and other interesting issues on Travel kMer</h1>
+            <form action="#" method="post">
+                <input type="email" name="subscriber" id="Subscribe-email"/>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo">
+            <div class="logo-image">
+                <img src="" alt="logo goes here">
+            </div>
+            <p class="slogan">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <ul class="footer-links">
+            <li>
+                <h1 class="footer-heading">Company</h1>
+                <ul class="sub-ul">
+                    <li class="links"><a href="#">About</a></li>
+                    <li class="links"><a href="#">Careers</a></li>
+                    <li class="links"><a href="#">Mobile</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1 class="footer-heading">Contact</h1>
+                <ul class="sub-ul">
+                    <li class="links"><a href="#">Help/FAQ</a></li>
+                    <li class="links"><a href="#">Press</a></li>
+                    <li class="links"><a href="#">Affiliates</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1 class="footer-heading">More</h1>
+                <ul class="sub-ul">
+                    <li class="links"><a href="#">Agency </a></li>
+                    <li class="links"><a href="#">Platfrom charges</a></li>
+                    <li class="links"><a href="#">VIP</a></li>
+                    <li class="links"><a href="#">Economic class</a></li>
+                    <li class="links"><a href="#">classic</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="social-media">
+            <ul class="media-list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <h1>Discover Our App</h1>
+            <div class="playstores">
+                <div class="play-store">
+                    <a href="#">
+                        <img src="./images/google-play.png" alt="play store">
+                    </a>
+                </div>
+                <div class="play-store">
+                    <a href="#">
+                        <img src="./images/App-store.png" alt="app store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">
+            All right reserved &copy; 2023
+        </p>
+    </footer>
     <script src="../javascript/main.js"></script>
 </body>
 </html>
