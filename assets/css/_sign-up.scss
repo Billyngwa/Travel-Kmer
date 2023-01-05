@@ -73,13 +73,17 @@ section.form_container{
                 margin: 10px 0px 10px 0px;
                 padding: 15px 15px 15px 15px;
                 @include display-element-flex(center,null);
-      
+                position:relative;
                 input{
                     @include input-and-button(none);
                     &::placeholder{
                         @include text-style(13px,400,#AAC4BC);
                         padding-left: 10px;
                     }
+                }
+                input.show-and-notshow{
+                    position: absolute;
+                    right: 20px;
                 }
                 i{
                     color: #AAC4BC;

@@ -115,6 +115,7 @@ section.form_container div.white_sign form p {
   padding: 15px 15px 15px 15px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 section.form_container div.white_sign form p input {
   outline: none;
@@ -141,6 +142,10 @@ section.form_container div.white_sign form p input::placeholder {
   font-weight: 400;
   color: #AAC4BC;
   padding-left: 10px;
+}
+section.form_container div.white_sign form p input.show-and-notshow {
+  position: absolute;
+  right: 20px;
 }
 section.form_container div.white_sign form p i {
   color: #AAC4BC;
