@@ -1,0 +1,80 @@
+footer{
+    margin-bottom: 30px;
+    div.footer-elements{
+        @include display-element-flex(null,space-between);
+        @include container(80%,10%);
+        .logo{
+            width: 20%;
+            div.logo-image{
+                width: 50px;
+                height: 50px;
+                border-radius: 5%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                }
+            }
+            p.slogan{
+                @include text-style(16px,400,#AAC4BC);
+            }
+        }
+        ul.footer-links{
+            @include display-element-flex(null,null);
+           @include container(60%,5%);
+            li{
+               @include container(28%,2%);
+                h1.footer-heading{
+                     @include text-style(20px,600,black);
+                     margin: 10px 0px 20px 0px;
+                     border-bottom: 1px solid $green;
+                     padding: 3px;
+                }
+                ul.sub-ul{
+                    li.links{
+                        margin: 10px 0px 10px 0px;
+                        a{
+                            
+                             @include text-style(14px,400,#AAC4BC);
+                             text-decoration: none;
+                             &:hover{
+                                text-decoration: underline;
+                                text-decoration-color: $green;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+        div.social-media{
+            width: 20%;
+            ul.media-list{
+                @include display-element-flex(center,null);
+                gap: 25px;
+                li{
+                    a{
+                        @include text-style(27px,400,#AAC4BC);
+                        text-decoration:none;
+                    }
+                }
+            }
+            h1{
+                @include text-style(17px,400,#AAC4BC);
+            }
+            .playstores{
+                @include display-element-flex(center,null);
+                .play-store{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 5%;
+                    a img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5%;
+                    }
+                }
+            }
+        }
+
+    }
+}

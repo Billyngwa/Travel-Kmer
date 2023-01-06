@@ -7,11 +7,11 @@ header{
     div.navigation{
         width: 100%;
         position: fixed;
-        margin-top: 2px;
+        margin-top: 0px;
         div.logo-nav-user{
             background-color: $green;
             @include display-element-flex(center,space-between);
-           @include container(80%,10%);
+           @include container(95%,2.5%);
             div.logo{
                 width: 50px;
                 height: 50px;
@@ -58,6 +58,7 @@ header{
                         }
                         span i{
                             transform: rotate(180deg);
+                            transition: 0.2s;
                         }
                     }
 
@@ -87,6 +88,52 @@ header{
         }
     }
     div.banner-section{
+        @include container(80%,10%);
+        @include display-element-flex(null,space-between);
         padding: 150px 0px 0px 0px;
+        .left-side{
+            width: 50%;
+            h3.best-destinations{
+                @include text-style(16px,400,#AAC4BC);
+            }
+            h1.banner-text{
+                @include text-style(50px,800,rgb(2, 2, 2));
+                span{
+                    color: $green;
+                }
+
+            }
+            p.banner-description{
+                @include text-style(18px,400,#AAC4BC);
+            }
+            div.findout{
+                button{
+                    @include input-and-button(none);
+                    background-color: $green;
+                    border-radius: 50px;
+                    margin: 20px 0px 0px 40px;
+                    padding: 10px 20px 10px 20px;
+                    a{
+                        @include text-style(14px,400,white);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right-side{
+            width: 50%;
+            div.image{
+                // background-image: url('../../images/header.jpg');
+                // background-size: contain;
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
     }
 }

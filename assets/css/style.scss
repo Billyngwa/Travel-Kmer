@@ -3,8 +3,10 @@
 @import './settings/mixins';
 @import './settings/reset';
 @import './home';
+@import './main';
+@import './footer';
 @import './sign-up';
-@import './dashboard.scss';
+// @import './dashboard.scss';
 @media (max-width:750px){
     // @import './sign-up';
 }

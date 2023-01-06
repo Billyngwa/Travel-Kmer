@@ -20,15 +20,15 @@ body {
 header div.navigation {
   width: 100%;
   position: fixed;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 header div.navigation div.logo-nav-user {
   background-color: #21C177;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin-left: 10%;
+  width: 95%;
+  margin-left: 2.5%;
 }
 header div.navigation div.logo-nav-user div.logo {
   width: 50px;
@@ -85,6 +85,7 @@ header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:
 }
 header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:hover span i {
   transform: rotate(180deg);
+  transition: 0.2s;
 }
 header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .auto-change {
   display: flex;
@@ -117,7 +118,161 @@ header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown 
   padding: 10px;
 }
 header div.banner-section {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
   padding: 150px 0px 0px 0px;
+}
+header div.banner-section .left-side {
+  width: 50%;
+}
+header div.banner-section .left-side h3.best-destinations {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #AAC4BC;
+}
+header div.banner-section .left-side h1.banner-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(2, 2, 2);
+}
+header div.banner-section .left-side h1.banner-text span {
+  color: #21C177;
+}
+header div.banner-section .left-side p.banner-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #AAC4BC;
+}
+header div.banner-section .left-side div.findout button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-color: #21C177;
+  border-radius: 50px;
+  margin: 20px 0px 0px 40px;
+  padding: 10px 20px 10px 20px;
+}
+header div.banner-section .left-side div.findout button a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+header div.banner-section .right-side {
+  width: 50%;
+}
+header div.banner-section .right-side div.image {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+header div.banner-section .right-side div.image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  margin-bottom: 30px;
+}
+footer div.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+footer div.footer-elements .logo {
+  width: 20%;
+}
+footer div.footer-elements .logo div.logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5%;
+}
+footer div.footer-elements .logo div.logo-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+footer div.footer-elements .logo p.slogan {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #AAC4BC;
+}
+footer div.footer-elements ul.footer-links {
+  display: flex;
+  width: 60%;
+  margin-left: 5%;
+}
+footer div.footer-elements ul.footer-links li {
+  width: 28%;
+  margin-left: 2%;
+}
+footer div.footer-elements ul.footer-links li h1.footer-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin: 10px 0px 20px 0px;
+  border-bottom: 1px solid #21C177;
+  padding: 3px;
+}
+footer div.footer-elements ul.footer-links li ul.sub-ul li.links {
+  margin: 10px 0px 10px 0px;
+}
+footer div.footer-elements ul.footer-links li ul.sub-ul li.links a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #AAC4BC;
+  text-decoration: none;
+}
+footer div.footer-elements ul.footer-links li ul.sub-ul li.links a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #21C177;
+          text-decoration-color: #21C177;
+}
+footer div.footer-elements div.social-media {
+  width: 20%;
+}
+footer div.footer-elements div.social-media ul.media-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+footer div.footer-elements div.social-media ul.media-list li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: #AAC4BC;
+  text-decoration: none;
+}
+footer div.footer-elements div.social-media h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #AAC4BC;
+}
+footer div.footer-elements div.social-media .playstores {
+  display: flex;
+  align-items: center;
+}
+footer div.footer-elements div.social-media .playstores .play-store {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+}
+footer div.footer-elements div.social-media .playstores .play-store a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
 section.form_container {
