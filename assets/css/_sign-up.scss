@@ -62,7 +62,7 @@ section.form_container{
             }
         }
         p.description{
-            @include text-style(13px,400,#AAC4BC);
+            @include text-style(13px,400, $ash);
             text-align: center;
             padding-top: 20px;
         }
@@ -77,7 +77,7 @@ section.form_container{
                 input{
                     @include input-and-button(none);
                     &::placeholder{
-                        @include text-style(13px,400,#AAC4BC);
+                        @include text-style(13px,400, $ash);
                         padding-left: 10px;
                     }
                 }
@@ -86,7 +86,7 @@ section.form_container{
                     right: 20px;
                 }
                 i{
-                    color: #AAC4BC;
+                    color:  $ash;
                 }
             }
             button{

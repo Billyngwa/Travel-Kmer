@@ -16,12 +16,13 @@ footer{
                 }
             }
             p.slogan{
-                @include text-style(16px,400,#AAC4BC);
+                @include text-style(16px,400, $ash);
+                padding: 25px 0px 0px 0px;
             }
         }
         ul.footer-links{
             @include display-element-flex(null,null);
-           @include container(60%,5%);
+            @include container(60%,5%);
             li{
                @include container(28%,2%);
                 h1.footer-heading{
@@ -35,7 +36,7 @@ footer{
                         margin: 10px 0px 10px 0px;
                         a{
                             
-                             @include text-style(14px,400,#AAC4BC);
+                             @include text-style(14px,400, $ash);
                              text-decoration: none;
                              &:hover{
                                 text-decoration: underline;
@@ -53,13 +54,14 @@ footer{
                 gap: 25px;
                 li{
                     a{
-                        @include text-style(27px,400,#AAC4BC);
+                        @include text-style(27px,400, $ash);
                         text-decoration:none;
                     }
                 }
             }
             h1{
-                @include text-style(17px,400,#AAC4BC);
+                @include text-style(17px,400, $ash);
+                padding: 10px 0px 0px 0px;
             }
             .playstores{
                 @include display-element-flex(center,null);
@@ -76,5 +78,9 @@ footer{
             }
         }
 
+    }
+    p.copyright{
+        text-align: center;
+        @include text-style(13px,400, $ash);
     }
 }
