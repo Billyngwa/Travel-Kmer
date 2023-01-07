@@ -21,3 +21,11 @@
     font-weight: $font-weight;
     color:$color;
 }
+@keyframes partners-animation {
+    0%{
+        right: 0px;
+    }
+    100%{
+        left: 0px;
+    }
+}

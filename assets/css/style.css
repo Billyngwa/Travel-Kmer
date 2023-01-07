@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@-webkit-keyframes partners-animation {
+  0% {
+    right: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes partners-animation {
+  0% {
+    right: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -416,26 +432,90 @@ main section.reservation-procedures .right div.trip-suggestion p.reserve a {
   color: #21C177;
   text-decoration: none;
 }
-main section.partners {
+main section.testimonials-section {
+  margin-top: 130px;
   width: 80%;
   margin-left: 10%;
-}
-main section.partners div.active-partners {
-  width: 18%;
-  margin-left: 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main section.partners div.active-partners div.partners-logo {
-  width: 18%;
+main section.testimonials-section .headings h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #21C177;
+}
+main section.testimonials-section .headings h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 57px;
+  font-weight: 800;
+  color: black;
+}
+main section.testimonials-section .testimonies .testimony {
+  position: relative;
+}
+main section.testimonials-section .testimonies .testimony .testifier-photo {
+  width: 50px;
+  height: 50px;
+}
+main section.testimonials-section .testimonies .testimony .testifier-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+main section.testimonials-section .testimonies .testimony .testimony-content {
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(160, 156, 156, 0.514);
+}
+main section.testimonials-section .testimonies .testimony .testimony-content p.content {
+  max-width: 500px;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+}
+main section.testimonials-section .testimonies .testimony .testimony-content div.testifier-name {
+  padding-top: 30px;
+}
+main section.testimonials-section .testimonies .testimony .testimony-content div.testifier-name h1.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+main section.testimonials-section .testimonies .testimony .testimony-content div.testifier-name span {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+main section.partners {
+  margin-top: 130px;
+  width: 80%;
+  margin-left: 10%;
+}
+main section.partners marquee {
+  width: 80%;
+  margin-left: 10%;
+}
+main section.partners marquee div.active-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.partners marquee div.active-partners div.partners-logo {
   height: 100px;
 }
-main section.partners div.active-partners div.partners-logo img {
+main section.partners marquee div.active-partners div.partners-logo img {
   width: 100%;
   height: 100%;
 }
 main section.newsletter-subscription {
+  margin-top: 100px;
   background-color: rgba(170, 196, 188, 0.0941176471);
   margin-bottom: 130px;
   border-top-left-radius: 20px;

@@ -189,18 +189,73 @@ main{
             }
         }
     }
+    section.testimonials-section{
+        // display: none;
+        margin-top: 130px;
+        @include container(80%,10%);
+        @include display-element-flex(center,space-between);
+        .headings{
+            h3{  @include text-style(20px,800,$green);}
+            h1{  @include text-style(57px,800,black);}
+        }
+        .testimonies{
+            .testimony{
+                position: relative;
+                .testifier-photo{
+                    // position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    img{
+                        width:100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .testimony-content{
+                    @include container(80%,10%);
+                    border-radius: 5px;
+                    box-shadow: 1px 2px 5px rgba(160, 156, 156, 0.514);
+                    p.content{
+                        max-width: 500px;
+                        line-height: 1.6;
+                         @include text-style(17px,400,black);
+                    }
+                    div.testifier-name{
+                        padding-top: 30px;
+                        h1.name{    
+                            @include text-style(20px,500,black);
+                        }
+                        span{
+                            @include text-style(15px,400,black);
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     section.partners{
+        // display: none;
+        margin-top: 130px;
         @include container(80%,10%);
-        div.active-partners{
-            @include container(18%,1%);
-            @include display-element-flex(center,space-between);
-            div.partners-logo{
-                width:18%;
-                height: 100px;
-                img{
-                    width: 100%;
-                    height: 100%;
+        // @include display-element-flex(center,space-between);
+        marquee{
+            
+            @include container(80%,10%);
+            div.active-partners{
+      
+                @include display-element-flex(center,space-between);
+                div.partners-logo{
+                    // animation-name: partners-animation;
+                    // animation-duration: 2s;
+                    // animation-iteration-count: infinite;
+                    // animation-timing-function: ease-in-out;
+                    // width:20%;
+                    height: 100px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -208,7 +263,8 @@ main{
 
 //this section is for the newsletter
     section.newsletter-subscription{
-        background-color: #aac4bc18;;
+        margin-top: 100px;
+        background-color: #aac4bc18;
         margin-bottom: 130px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
