@@ -2508,144 +2508,49 @@ ul {
     margin-top: 0px;
   }
   header div.navigation div.logo-nav-user {
-    background-color: #21C177;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header div.navigation div.logo-nav-user div.logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 5%;
-    margin-left: 25px;
-  }
-  header div.navigation div.logo-nav-user div.logo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang {
-    margin: 0px 60px 0px 0px;
-    display: flex;
-    align-items: center;
   }
   header div.navigation div.logo-nav-user div.nav-user-lang nav {
     display: none;
   }
-  header div.navigation div.logo-nav-user div.nav-user-lang nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang nav ul li {
-    margin: 0px 40px 0px 0px;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang nav ul li a {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-  }
   header div.navigation div.logo-nav-user div.nav-user-lang .user {
     display: none;
   }
-  header div.navigation div.logo-nav-user div.nav-user-lang .user button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    margin: 0px 0px 0px 0px;
-    border-radius: 10px;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang .user button a {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-  }
   header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown {
-    margin-left: 10px;
-    position: relative;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:hover .absolute {
-    display: block;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown:hover span i {
-    transform: rotate(180deg);
-    transition: 0.2s;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .auto-change {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .auto-change span {
-    margin-left: 10px;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .absolute {
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.356);
-    display: none;
-    padding: 10px;
-  }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.language-dropdown .absolute button {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    padding: 10px;
+    margin-left: 5px;
   }
   header div.navigation div.logo-nav-user div.nav-user-lang div.hamburger {
-    margin-left: 30px;
     display: block;
   }
-  header div.navigation div.logo-nav-user div.nav-user-lang div.hamburger .first, header div.navigation div.logo-nav-user div.nav-user-lang div.hamburger .second, header div.navigation div.logo-nav-user div.nav-user-lang div.hamburger .third {
-    background-color: black;
-    width: 20px;
-    height: 3px;
-    border-radius: 5px;
-    margin-top: 4px;
-  }
   header div.banner-section {
-    width: 80%;
-    margin-left: 10%;
+    width: 95%;
+    margin-left: 2.5%;
     display: flex;
     justify-content: space-between;
-    padding: 150px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
   }
   header div.banner-section .left-side {
-    width: 50%;
+    width: 70%;
   }
   header div.banner-section .left-side h3.best-destinations {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     color: #AAC4BC;
   }
   header div.banner-section .left-side h1.banner-text {
     font-family: "Poppins", sans-serif;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 700;
     color: rgb(2, 2, 2);
+    max-width: 300px;
   }
   header div.banner-section .left-side h1.banner-text span {
     color: #21C177;
   }
   header div.banner-section .left-side p.banner-description {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: #AAC4BC;
   }
@@ -2666,11 +2571,12 @@ ul {
     text-decoration: none;
   }
   header div.banner-section .right-side {
-    width: 50%;
+    width: 30%;
   }
   header div.banner-section .right-side div.image {
     width: 100%;
-    max-height: 70%;
+    height: 100px;
+    margin: 40px 0px 0px 0px;
     border-radius: 20px;
   }
   header div.banner-section .right-side div.image img {
@@ -2678,11 +2584,8 @@ ul {
     width: 100%;
     border-radius: 10px;
   }
-  .mobile {
-    display: none;
-  }
   main section.category {
-    margin-top: 120px;
+    margin-top: 50px;
     width: 80%;
     margin-left: 10%;
   }
@@ -2702,19 +2605,19 @@ ul {
     text-align: center;
   }
   main section.category ul.category-of-services {
-    display: flex;
-    align-items: center;
+    display: block;
     margin-top: 50px;
   }
   main section.category ul.category-of-services li {
-    width: 21%;
-    margin-left: 2%;
+    width: 80%;
+    margin-left: 10%;
   }
   main section.category ul.category-of-services li i {
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 40%;
-    font-size: 24px;
-    color: #AAC4BC;
+    font-size: 30px;
+    color: #21C177;
   }
   main section.category ul.category-of-services li h1.service-type {
     font-family: "Poppins", sans-serif;
@@ -2731,7 +2634,7 @@ ul {
     text-align: center;
   }
   main section.top-selling {
-    margin-top: 100px;
+    margin-top: 20px;
     width: 80%;
     margin-left: 10%;
     padding-top: 30px;
@@ -2754,11 +2657,13 @@ ul {
   }
   main section.top-selling .routes {
     display: block;
-    gap: 20px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   main section.top-selling .routes .each-route {
     border-radius: 5px;
     padding: 30px;
+    margin-top: 30px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.466);
   }
   main section.top-selling .routes .each-route .images-holder {
