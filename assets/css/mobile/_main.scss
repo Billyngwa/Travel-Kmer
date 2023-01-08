@@ -1,0 +1,305 @@
+main{
+    // This style for section category
+    section.category{
+        margin-top: 120px;
+        @include container(80%,10%);
+        h3.category{
+            @include text-style(14px,400, $ash);
+            text-align: center;
+        }
+        h1.best-services{
+          @include text-style(24px,600,black);
+          padding-top: 20px;
+          text-align: center;
+        }
+        ul.category-of-services{
+            @include display-element-flex(center,null);
+            margin-top: 50px;
+            li{
+                @include container(21%,2%);
+                i{
+                    margin-bottom: 20px;
+                    margin-left: 40%;
+                    font-size: 24px;
+                    color: $ash;
+                }
+                h1.service-type{
+                     @include text-style(20px,400,black);
+                     text-align: center;
+                }
+                p.service-description{
+                    @include text-style(17px,400, $ash);
+                      text-align: center;
+                }
+            }
+        }
+    }
+
+
+    // this for section top-selling
+    section.top-selling{
+        margin-top: 100px;
+        @include container(80%,10%);
+        padding-top: 30px;
+        h3.top-selling{
+            @include text-style(14px,400, $ash);
+            text-align: center;
+        }
+        h1.frequent-destinations{
+            @include text-style(24px,600,black);
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .routes{
+            @include display-element-flex(center,null);
+            gap: 20px;
+            .each-route{
+                border-radius: 5px;
+                // width: 50%;
+                padding: 30px;
+                box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.466);
+                .images-holder{
+                    position: relative;
+                    @include display-element-flex(center,null);
+                    gap: 20px;
+                    .image-container{
+                        width: 100px;
+                        height: 100px;
+                        border: 5px solid $green;
+                        border-radius: 50%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    
+                    i{
+                        font-size: 40px;
+                        position: absolute;
+                        left: 40%;
+                        // color: $green;
+                    }
+                }
+                p.route-description{
+                    position: relative;
+                    padding-top: 10px;
+                    @include text-style(16px,400,black);
+                    @include display-element-flex(center,space-between);
+                    span{
+                        position: absolute;
+                        right: 3px;
+                        @include text-style(12px,400,$ash);
+                    }
+                }
+            }
+        }
+    }
+
+
+    section.reservation-procedures{
+        @include display-element-flex(center,space-between);
+        @include container(80%,10%);
+        margin-top: 130px;
+        div.left{
+            width: 40%;
+            h3.easy-and-fast{
+                @include text-style(14px,600, $ash);
+            }
+            h1.booking{
+                @include text-style(45px,500,black);
+            }
+            div.procedures{
+                div.procedure{
+                    margin:30px 0px 20px 0px;
+                    @include display-element-flex(null,null);
+                    gap: 20px;
+                    .icon{
+                        padding: 10px;
+                        // background-color: red;
+                        i{
+                            font-size: 30px;
+                        }
+                    }
+                    div.each-step{
+                        div.procedur{
+                            h1{
+                                @include text-style(20px,600,black);
+                            }
+                            p{
+                                @include text-style(15px,400,$ash);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+           @include container(40%,10%);
+           margin-right: 10%;
+            box-shadow: 7px 9px 234px $ash;
+            border-radius: 15px;
+            div.image-holder{
+                // width: 400px;
+                @include container(90%,5%);
+                max-height: 400px;
+                padding-top: 20px;
+                // background-color: blue;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+            }
+            div.trip-suggestion{
+                position: relative;
+                div.fast-trip{
+                    margin-left: 20px;
+                    h1.trip{
+                        @include text-style(20px,600,black);
+                    }
+                    p.trip-description{
+                        max-width: 195px;;
+                        display: flex;
+                        align-items: center;
+                        @include text-style(20px,600,black);
+                        justify-content: space-between;
+                        span{  @include text-style(15px,400,$ash);}
+                    }
+                    p.number-of-people-tripping{
+                        @include text-style(15px,800,$green);
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                }
+                p.reserve{
+                    padding: 10px;
+                    border-radius: 15px;
+                    position: absolute;
+                    right: 2px;
+                    bottom: 45%;
+                    // z-index: 999;
+                    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+                    a{
+                        @include text-style(15px,800,$green);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    section.testimonials-section{
+        // display: none;
+        margin-top: 130px;
+        @include container(80%,10%);
+        @include display-element-flex(center,space-between);
+        .headings{
+            h3{  @include text-style(20px,800,$green);}
+            h1{  @include text-style(57px,800,black);}
+        }
+        .testimonies{
+            .testimony{
+                position: relative;
+                .testifier-photo{
+                    // position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    img{
+                        width:100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .testimony-content{
+                    @include container(80%,10%);
+                    border-radius: 5px;
+                    box-shadow: 1px 2px 5px rgba(160, 156, 156, 0.514);
+                    p.content{
+                        max-width: 500px;
+                        line-height: 1.6;
+                         @include text-style(17px,400,black);
+                    }
+                    div.testifier-name{
+                        padding-top: 30px;
+                        h1.name{    
+                            @include text-style(20px,500,black);
+                        }
+                        span{
+                            @include text-style(15px,400,black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.partners{
+        // display: none;
+        margin-top: 130px;
+        @include container(80%,10%);
+        // @include display-element-flex(center,space-between);
+        marquee{
+            
+            @include container(80%,10%);
+            div.active-partners{
+      
+                @include display-element-flex(center,space-between);
+                div.partners-logo{
+                    // animation-name: partners-animation;
+                    // animation-duration: 2s;
+                    // animation-iteration-count: infinite;
+                    // animation-timing-function: ease-in-out;
+                    // width:20%;
+                    height: 100px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+//this section is for the newsletter
+    section.newsletter-subscription{
+        margin-top: 100px;
+        background-color: #aac4bc18;
+        margin-bottom: 130px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        @include container(80%,10%);
+        h1{
+            @include text-style(34px,700,black);
+            padding-top: 40px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        form{
+            @include container(60%,20%);
+            padding-bottom: 60px;
+            @include display-element-flex(center,null);
+            input{
+                width: 80%;
+                @include input-and-button(none);
+                background-color: white;
+                @include text-style(24px,600,black);
+                padding: 20px 0px 20px 0px ;
+                padding-left:23px;
+                border-radius: 5px;
+                &::placeholder{@include text-style(17px,500,black);
+                }
+            }
+            div.button-container{
+                @include container(5%,2.5%);
+                button{
+                    @include input-and-button(none);
+                    background-color: $green;
+                    @include text-style(24px,600,white);
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

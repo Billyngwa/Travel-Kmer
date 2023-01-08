@@ -12,7 +12,7 @@ header{
         div.logo-nav-user{
             background-color: $green;
             @include display-element-flex(center,space-between);
-           @include container(95%,2.5%);
+        //    @include container(95%,2.5%);
             div.logo{
                 width: 50px;
                 height: 50px;

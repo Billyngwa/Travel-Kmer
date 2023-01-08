@@ -2,11 +2,28 @@
 @import './settings/variables';
 @import './settings/mixins';
 @import './settings/reset';
-@import './home';
-@import './main';
-@import './footer';
-@import './sign-up';
-// @import './dashboard.scss';
-@media (max-width:750px){
-    // @import './sign-up';
+@import './desktop/header';
+@import './desktop/main';
+@import './desktop/footer';
+@import './desktop/sign-up';
+
+@media (max-width:1200px){
+    @import './desktop/header';
+    @import './desktop/main';
+    @import './desktop/footer';
+    @import './desktop/sign-up';
+}
+
+@media (max-width:900px){
+    @import './tablet/header';
+    @import './tablet/main';
+    @import './tablet/footer';
+    @import './tablet/sign-up';
+}
+
+@media (max-width:600px){
+    @import './mobile/header';
+    @import './mobile/main';
+    @import './mobile/footer';
+    @import './mobile/sign-up';
 }

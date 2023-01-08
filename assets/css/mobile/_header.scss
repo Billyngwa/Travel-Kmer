@@ -1,0 +1,90 @@
+body{
+background-color: rgb(255, 247, 247);
+}
+header{
+    // @include container(80%,10%);
+    // background-color: green;
+    div.navigation{
+    // display: none;
+        z-index: 10;
+        width: 100%;
+        position: fixed;
+        margin-top: 0px;
+        div.logo-nav-user{
+            width: 100%;
+            di.logo{
+                margin-left: 0px;
+            }
+            div.nav-user-lang{
+                nav{
+                    display: none;
+                }
+                .user{
+                    display: none;
+                }
+                div.language-dropdown{
+                    margin-left: 5px;  
+                }
+                div.hamburger{
+                    display: block;
+                }
+            }
+        }
+    }
+    div.banner-section{
+        @include container(95%,2.5%);
+        // width: 100%;
+        @include display-element-flex(null,space-between);
+        // position: relative;
+        padding: 150px 0px 0px 0px;
+        .left-side{
+            width: 50%;
+            h3.best-destinations{
+                @include text-style(16px,400, $ash);
+            }
+            h1.banner-text{
+                @include text-style(21px,700,rgb(2, 2, 2));
+                max-width: 200px;
+                span{
+                    color: $green;
+                }
+
+            }
+            p.banner-description{
+                @include text-style(12px,400, $ash);
+                // position: absolute;
+                // bottom: 60px;
+            }
+            div.findout{
+                position: relative;
+                // padding-top: 140px;
+                button{
+                    @include input-and-button(none);
+                    background-color: $green;
+                    border-radius: 50px;
+                    margin: 20px 0px 0px 40px;
+                    padding: 10px 20px 10px 20px;
+                    a{
+                        @include text-style(14px,400,white);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right-side{
+            width: 50%;
+            div.image{
+                // background-image: url('../../images/header.jpg');
+                // background-size: contain;
+                width: 100%;
+                max-height: 70%;
+                border-radius: 20px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
