@@ -2,11 +2,14 @@
 @import './settings/variables';
 @import './settings/mixins';
 @import './settings/reset';
-@import './desktop/header';
-@import './desktop/main';
-@import './desktop/footer';
-@import './desktop/sign-up';
 
+
+@media (max-width:3000px){
+    @import './desktop/header';
+    @import './desktop/main';
+    @import './desktop/footer';
+    @import './desktop/sign-up';
+}
 @media (max-width:1200px){
     @import './desktop/header';
     @import './desktop/main';
