@@ -104,36 +104,37 @@ main{
 
 
     section.reservation-procedures{
-        @include display-element-flex(center,space-between);
-        @include container(80%,10%);
-        margin-top: 130px;
+        display: block;
+        width:100%;
+        margin-top:130px;
         div.left{
-            width: 40%;
+            @include container(96%,2%);
             h3.easy-and-fast{
                 @include text-style(14px,600, $ash);
             }
             h1.booking{
-                @include text-style(45px,500,black);
+                @include text-style(23px,600,black);
+                text-align: center;
             }
             div.procedures{
                 div.procedure{
                     margin:30px 0px 20px 0px;
                     @include display-element-flex(null,null);
-                    gap: 20px;
+                    gap: 10px;
                     .icon{
                         padding: 10px;
                         // background-color: red;
                         i{
-                            font-size: 30px;
+                            font-size: 20px;
                         }
                     }
                     div.each-step{
                         div.procedur{
                             h1{
-                                @include text-style(20px,600,black);
+                                @include text-style(16px,600,black);
                             }
                             p{
-                                @include text-style(15px,400,$ash);
+                                @include text-style(12px,400,$ash);
                             }
                         }
                     }
@@ -141,14 +142,15 @@ main{
             }
         }
         .right{
-           @include container(40%,10%);
-           margin-right: 10%;
+           @include container(90%,5%);
+        // width: 100%;
+        //    margin-right: 10%;
             box-shadow: 7px 9px 234px $ash;
             border-radius: 15px;
             div.image-holder{
                 // width: 400px;
-                @include container(90%,5%);
-                max-height: 400px;
+                @include container(96%,2%);
+                max-height: 200px;
                 padding-top: 20px;
                 // background-color: blue;
                 img{
@@ -158,19 +160,22 @@ main{
                 }
             }
             div.trip-suggestion{
-                position: relative;
+                background-color: whitesmoke;
+                position: static;
                 div.fast-trip{
                     margin-left: 20px;
                     h1.trip{
-                        @include text-style(20px,600,black);
+                        @include text-style(16px,600,black);
                     }
                     p.trip-description{
-                        max-width: 195px;;
+                        max-width: 185px;;
                         display: flex;
                         align-items: center;
-                        @include text-style(20px,600,black);
-                        justify-content: space-between;
-                        span{  @include text-style(15px,400,$ash);}
+                        @include text-style(12px,600,black);
+                        justify-content: space-arounde;
+                        span{  @include text-style(12px,400,$ash);
+                            margin-right: 40px;
+                        }
                     }
                     p.number-of-people-tripping{
                         @include text-style(15px,800,$green);
@@ -179,15 +184,15 @@ main{
                     }
                 }
                 p.reserve{
-                    padding: 10px;
+                    padding: 5px;
                     border-radius: 15px;
-                    position: absolute;
+                    position: relative;
                     right: 2px;
                     bottom: 45%;
                     // z-index: 999;
                     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
                     a{
-                        @include text-style(15px,800,$green);
+                        @include text-style(13px,600,$green);
                         text-decoration: none;
                     }
                 }
@@ -195,17 +200,17 @@ main{
         }
     }
     section.testimonials-section{
-        // display: none;
-        margin-top: 130px;
-        @include container(80%,10%);
-        @include display-element-flex(center,space-between);
+        margin-top: 80px;
+        @include container(96%,2%);
+        // @include display-element-flex(center,space-between);
+        display: block;
         .headings{
-            h3{  @include text-style(20px,800,$green);}
-            h1{  @include text-style(57px,800,black);}
+            h3{  @include text-style(15px,600,$green); text-align: center;}
+            h1{  @include text-style(17px,600,black); text-align: center;}
         }
         .testimonies{
             .testimony{
-                position: relative;
+                position: static;
                 .testifier-photo{
                     // position: absolute;
                     width: 50px;
@@ -228,10 +233,10 @@ main{
                     div.testifier-name{
                         padding-top: 30px;
                         h1.name{    
-                            @include text-style(20px,500,black);
+                            @include text-style(16px,500,black);
                         }
                         span{
-                            @include text-style(15px,400,black);
+                            @include text-style(13px,400,black);
                         }
                     }
                 }
@@ -268,24 +273,25 @@ main{
 
 //this section is for the newsletter
     section.newsletter-subscription{
-        margin-top: 100px;
+        margin-top: 50px;
         background-color: #aac4bc18;
         margin-bottom: 130px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        @include container(80%,10%);
+        @include container(96%,2%);
         h1{
-            @include text-style(34px,700,black);
+            @include text-style(15px,600,black);
             padding-top: 40px;
             padding-bottom: 50px;
             text-align: center;
         }
         form{
-            @include container(60%,20%);
+            @include container(96%,2%);
             padding-bottom: 60px;
-            @include display-element-flex(center,null);
+            // @include display-element-flex(center,null);
+            display: block;
             input{
-                width: 80%;
+                @include container(96%,2%);
                 @include input-and-button(none);
                 background-color: white;
                 @include text-style(24px,600,black);
@@ -296,9 +302,11 @@ main{
                 }
             }
             div.button-container{
-                @include container(5%,2.5%);
+                @include container(96%,2%);
+                padding: 20px 0px 20px 0px ;
                 button{
                     @include input-and-button(none);
+                    @include container(96%,2%);
                     background-color: $green;
                     @include text-style(24px,600,white);
                     padding: 10px;

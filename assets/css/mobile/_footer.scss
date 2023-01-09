@@ -1,8 +1,9 @@
 footer{
     margin-bottom: 30px;
     div.footer-elements{
-        @include display-element-flex(null,space-between);
-        @include container(80%,10%);
+        // @include display-element-flex(null,space-between);
+        display: block;
+        @include container(96%,2%);
         .logo{
             width: 20%;
             div.logo-image{
@@ -18,24 +19,27 @@ footer{
             p.slogan{
                 @include text-style(16px,400, $ash);
                 padding: 25px 0px 0px 0px;
+                width: 100%;
             }
         }
         ul.footer-links{
-            @include display-element-flex(null,null);
-            @include container(60%,5%);
+            // @include display-element-flex(null,null);
+            display: block;
+            // @include container(60%,5%);
+            width: 100%;
             li{
-               @include container(28%,2%);
+               @include container(98%,1%);
                 h1.footer-heading{
                      @include text-style(20px,600,black);
                      margin: 10px 0px 20px 0px;
                      border-bottom: 1px solid $green;
                      padding: 3px;
+                     width: 100px;
                 }
                 ul.sub-ul{
                     li.links{
                         margin: 10px 0px 10px 0px;
                         a{
-                            
                              @include text-style(14px,400, $ash);
                              text-decoration: none;
                              &:hover{
@@ -48,7 +52,7 @@ footer{
             }
         }
         div.social-media{
-            width: 20%;
+            width: 100%;
             ul.media-list{
                 @include display-element-flex(center,null);
                 gap: 25px;
@@ -60,8 +64,10 @@ footer{
                 }
             }
             h1{
-                @include text-style(17px,400, $ash);
+                @include text-style(14px,400, $ash);
                 padding: 10px 0px 0px 0px;
+                // text-align: center;
+                width: 100%;
             }
             .playstores{
                 @include display-element-flex(center,null);
