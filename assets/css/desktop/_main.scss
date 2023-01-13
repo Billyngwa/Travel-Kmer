@@ -53,7 +53,9 @@ main{
         }
         .routes{
             @include display-element-flex(center,null);
+            // display: block;
             gap: 20px;
+            // width: 80vw;
             .each-route{
                 border-radius: 5px;
                 // width: 50%;

@@ -738,7 +738,7 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign .content .signin_link {
+  section.form_container div.green_sign .content .signin_link, section.form_container div.green_sign .content .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -748,7 +748,7 @@ ul {
     width: 70%;
     margin-left: 15%;
   }
-  section.form_container div.green_sign .content .signin_link a {
+  section.form_container div.green_sign .content .signin_link a, section.form_container div.green_sign .content .signup_link a {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -782,7 +782,7 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link {
+  section.form_container div.green_sign_sign_in .content .signin_link, section.form_container div.green_sign_sign_in .content .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -792,7 +792,7 @@ ul {
     width: 70%;
     margin-left: 15%;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link a {
+  section.form_container div.green_sign_sign_in .content .signin_link a, section.form_container div.green_sign_sign_in .content .signup_link a {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -861,7 +861,7 @@ ul {
     outline: none;
     border: none;
     background-color: transparent;
-    width: 95%;
+    width: 90%;
     margin-left: 2.5%;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -886,8 +886,9 @@ ul {
     font-weight: 400;
     color: #AAC4BC;
   }
-  section.form_container div.white_sign form p input.show-and-notshow {
-    right: 3px;
+  section.form_container div.white_sign form p input.check_me {
+    position: absolute;
+    left: 45%;
   }
   section.form_container div.white_sign form p i {
     color: #AAC4BC;
@@ -967,7 +968,7 @@ ul {
     outline: none;
     border: none;
     background-color: transparent;
-    width: 95%;
+    width: 90%;
     margin-left: 2.5%;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -992,8 +993,9 @@ ul {
     font-weight: 400;
     color: #AAC4BC;
   }
-  section.form_container div.white_sign_sign_in form p input.show-and-notshow {
-    right: 3px;
+  section.form_container div.white_sign_sign_in form p input.check_me {
+    position: absolute;
+    left: 45%;
   }
   section.form_container div.white_sign_sign_in form p i {
     color: #AAC4BC;
@@ -1722,7 +1724,7 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign .content .signin_link {
+  section.form_container div.green_sign .content .signin_link, section.form_container div.green_sign .content .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -1732,7 +1734,7 @@ ul {
     width: 70%;
     margin-left: 15%;
   }
-  section.form_container div.green_sign .content .signin_link a {
+  section.form_container div.green_sign .content .signin_link a, section.form_container div.green_sign .content .signup_link a {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -1766,7 +1768,7 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link {
+  section.form_container div.green_sign_sign_in .content .signin_link, section.form_container div.green_sign_sign_in .content .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -1776,7 +1778,7 @@ ul {
     width: 70%;
     margin-left: 15%;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link a {
+  section.form_container div.green_sign_sign_in .content .signin_link a, section.form_container div.green_sign_sign_in .content .signup_link a {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -1845,7 +1847,7 @@ ul {
     outline: none;
     border: none;
     background-color: transparent;
-    width: 95%;
+    width: 90%;
     margin-left: 2.5%;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -1870,8 +1872,9 @@ ul {
     font-weight: 400;
     color: #AAC4BC;
   }
-  section.form_container div.white_sign form p input.show-and-notshow {
-    right: 3px;
+  section.form_container div.white_sign form p input.check_me {
+    position: absolute;
+    left: 45%;
   }
   section.form_container div.white_sign form p i {
     color: #AAC4BC;
@@ -1951,7 +1954,7 @@ ul {
     outline: none;
     border: none;
     background-color: transparent;
-    width: 95%;
+    width: 90%;
     margin-left: 2.5%;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -1976,8 +1979,9 @@ ul {
     font-weight: 400;
     color: #AAC4BC;
   }
-  section.form_container div.white_sign_sign_in form p input.show-and-notshow {
-    right: 3px;
+  section.form_container div.white_sign_sign_in form p input.check_me {
+    position: absolute;
+    left: 45%;
   }
   section.form_container div.white_sign_sign_in form p i {
     color: #AAC4BC;

@@ -22,25 +22,28 @@
             </ul>
             <p class="description">or use your email account</p>
             <form action="#" method="post">
-                <p class="email">
+                <p class="email sign_in_email_field">
                     <i class="fa-regular fa-envelope"></i>
                     <!-- icon sits here -->
                     <input type="email" name="email" id="email" class="emails_holder" placeholder="email"/>
                 </p>
-                <p class="password">
+                <p class="password sign_in_password_field">
                     <i class="fa-solid fa-lock"></i>
                     <!-- icon sits here -->
                     <input type="password" name="password" id="sign-in-password" class="sign_in_passwordField password_holder" placeholder="password"/>
-                    <input type="checkbox" name="check" class="sign_in_show show-and-notshow"/>
+                    <input type="checkbox" name="check" class="check_me show-and-notshow"/>
                 </p>
-                <button type="button">SIGN IN</button>
+                <button class="signup_btn" type="button">SIGN IN</button>
             </form>
         </div>
         <div class="green_sign_sign_in sign_in">
                 <div class="content">
                 <h1 class="welcome-notice">Hello Friend!</h1>
                 <p class="heading_description">Enter your personal details and start journey with us </p>
-                <button class="signin_link" type="button"><a href="./sign-up.html">SIGN UP</a></button>
+                <!-- <button class="signup_link" type="button"><a href="./sign-up.html">SIGN UP</a></button> -->
+                <a href="./sign-up.html">
+                    <button  class="signup_link" type="button">SIGN UP</button>
+                </a>
             </div>
         </div>
     </section>
