@@ -738,7 +738,16 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign .content .signin_link, section.form_container div.green_sign .content .signup_link {
+  section.form_container div.green_sign .content a {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 65x 15px 65px;
+  }
+  section.form_container div.green_sign .content a .signin_link, section.form_container div.green_sign .content a .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -747,14 +756,6 @@ ul {
     margin: 40px 0px 0px 0px;
     width: 70%;
     margin-left: 15%;
-  }
-  section.form_container div.green_sign .content .signin_link a, section.form_container div.green_sign .content .signup_link a {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    width: 100%;
   }
   section.form_container div.green_sign_sign_in {
     width: 40%;
@@ -782,7 +783,16 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link, section.form_container div.green_sign_sign_in .content .signup_link {
+  section.form_container div.green_sign_sign_in .content a {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 65x 15px 65px;
+  }
+  section.form_container div.green_sign_sign_in .content a .signin_link, section.form_container div.green_sign_sign_in .content a .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -791,14 +801,6 @@ ul {
     margin: 40px 0px 0px 0px;
     width: 70%;
     margin-left: 15%;
-  }
-  section.form_container div.green_sign_sign_in .content .signin_link a, section.form_container div.green_sign_sign_in .content .signup_link a {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    width: 100%;
   }
   section.form_container div.white_sign {
     width: 60%;
@@ -1724,7 +1726,16 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign .content .signin_link, section.form_container div.green_sign .content .signup_link {
+  section.form_container div.green_sign .content a {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 65x 15px 65px;
+  }
+  section.form_container div.green_sign .content a .signin_link, section.form_container div.green_sign .content a .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -1733,14 +1744,6 @@ ul {
     margin: 40px 0px 0px 0px;
     width: 70%;
     margin-left: 15%;
-  }
-  section.form_container div.green_sign .content .signin_link a, section.form_container div.green_sign .content .signup_link a {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    width: 100%;
   }
   section.form_container div.green_sign_sign_in {
     width: 40%;
@@ -1768,7 +1771,16 @@ ul {
     color: white;
     text-align: center;
   }
-  section.form_container div.green_sign_sign_in .content .signin_link, section.form_container div.green_sign_sign_in .content .signup_link {
+  section.form_container div.green_sign_sign_in .content a {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 65x 15px 65px;
+  }
+  section.form_container div.green_sign_sign_in .content a .signin_link, section.form_container div.green_sign_sign_in .content a .signup_link {
     outline: none;
     border: 1px solid white;
     background-color: transparent;
@@ -1777,14 +1789,6 @@ ul {
     margin: 40px 0px 0px 0px;
     width: 70%;
     margin-left: 15%;
-  }
-  section.form_container div.green_sign_sign_in .content .signin_link a, section.form_container div.green_sign_sign_in .content .signup_link a {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    width: 100%;
   }
   section.form_container div.white_sign {
     width: 60%;
