@@ -9,6 +9,8 @@
     @import './desktop/main';
     @import './desktop/footer';
     @import './desktop/sign-up';
+    @import './desktop/user_profile';
+    @import './desktop/reservation';
 }
 @media (max-width:1200px){
     @import './desktop/header';

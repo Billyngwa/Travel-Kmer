@@ -1,0 +1,167 @@
+header {
+    div.navigation {
+        div.logo-nav-user {
+            div.search-agency {
+                width: 30%;
+                form {
+                    width: 100%;
+
+                    input {
+                        width: 70%;
+                        padding: 5px 5px 5px 10px;
+                        outline: none;
+                        border-radius: 50px;
+                        border: none;
+
+                        &::placeholder {
+                            @include text-style(16px, 400, $font-family);
+                            color: rgba(0, 0, 0, 0.356);
+                            padding-left: 5px;
+                        }
+                    }
+
+                    button {
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: whitesmoke;
+                        @include text-style(16px, 500, $font-family);
+                        color: rgba(0, 0, 0, 0.651);
+                        padding: 3px;
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.user-profile {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+
+    p.signin {
+        width: 45px;
+        margin-left: 3px;
+        height: 45px;
+        border-radius: 50%;
+        top: 2px;
+        position: absolute;
+        background-color: $green;
+        @include text-style(25px, 600, $font-family);
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+
+main.user-profile-main {
+    @include display-element-flex(null, space-between);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    section.user-profile {
+        @include container(20%, 2.5%);
+
+        display: none;
+        div.user-photo_user-name {
+            @include display-element-flex(center, null);
+            gap: 10px;
+
+            div.user-photo {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: $green;
+
+                p.user-name-initial {
+                    width: 80%;
+                    margin-left: 10%;
+                    height: 100%;
+                    border-radius: 50%;
+                    @include text-style(25px, 600, $font-family);
+                    color: whitesmoke;
+                    text-align: center;
+                    padding-top: 20%;
+                }
+            }
+
+            div.user-name {
+                h1.name {
+                    @include text-style(25px, 600, $font-family);
+                }
+            }
+        }
+
+        div.profile-settings {
+            @include display-element-flex(center, space-between);
+            margin: 10px 0px 5px 0px;
+            @include container(90%, 5%);
+
+            p.setting {
+                @include text-style(16px, 400, $font-family);
+                color: black;
+            }
+
+            button {
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                background-color: $green;
+                color: whitesmoke;
+                padding: 5px;
+                width: 75%;
+                @include text-style(16px, 400, $font-family);
+            }
+        }
+    }
+
+    section.available-agencies {
+        @include container(70%, 2.5%);
+        @include display-element-flex(center, space-between);
+
+        align-self: center;
+        flex-wrap: wrap;
+
+        div.agency {
+            @include container(31%, 1%);
+            background: linear-gradient(0deg, $green, skyblue 30%, rgba(0, 0, 0, 0.342));
+            margin-top: 30px;
+            padding: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                transition: width 1.3s;
+            }
+
+            h1.agency-bold {
+                @include text-style(25px, 700, $font-family);
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+@media (max-width:578px) {
+    main.user-profile-main {
+        display: block;
+
+        section.user-profile {
+            display: none;
+        }
+
+        section.available-agencies {
+            display: block;
+            @include container(90%, 5%);
+
+            div.agency {
+                @include container(90%, 5%);
+            }
+        }
+    }
+}

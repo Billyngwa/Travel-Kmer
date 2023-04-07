@@ -1,38 +1,162 @@
+import { reactiveFunctions } from "./formExports.js";
+
 const signInCheckBox = document.querySelector('.check_me');// Getting the checkbox as an object
 let signUpPasswordField  = document.querySelector('.sign_up_passwordField');// Getting password field for signup as object
 let signInPasswordField  = document.querySelector('.sign_in_passwordField');// getting password for sign in as object
 let userName = document.querySelector('.name_holder');
-
+const mainBody =  document.getElementsByTagName('body');
 let email = document.querySelector('.email_holder');
-let signupButton = document.querySelector('.signup_btn');
+let signupButton = document.querySelector('button.signup_btn');
 let formElement = document.querySelector('form');
+let agencyBold = document.querySelectorAll('.agency');
+let firstLetter = document.querySelector('.first-letter');
+let userProfileSection = document.querySelector('section.user-profile');
+let availableAgencies = document.querySelector('section.available-agencies');
+const mobileElement = document.querySelectorAll('.mobile');
+const hamburgerButton = document.querySelectorAll('.hamburger');
+const emailField = document.querySelector('#email');
+const signInBtn = document.querySelector('.signin_btn');
+const reserveBtn = document.querySelector('.reserve-button');
+const reservationName = document.querySelector('#client-name');
+const reservationId = document.querySelector('#client-id');
+const departureZone = document.querySelector('select#select-from');
+const destinationZone = document.querySelector('select#select-to');
 
-//this block of code function to show the password written down by the user
-signInCheckBox.addEventListener('click', action =>{
-  // action.preventDefault();
-  signInCheckBox.classList.toggle('reveal_password');
-  signInPasswordField.classList.toggle('reveal_password');
-    if(signInPasswordField.classList.contains('reveal_password')){
-        signInPasswordField.type = 'text';
-    }else{
-      signInPasswordField.type = 'password';
-    }
+
+if(reserveBtn){
+	reserveBtn.addEventListener('click',function(event){
+		event.preventDefault();
+		const clientReservation = {
+			Name: reservationName.value,
+			reserveId : reservationId.value,
+			departure : departureZone.value,
+			destination : destinationZone.value,
+		};
+		let reservationsInLocalStorage = localStorage.getItem('Reservations');
+        if (reservationsInLocalStorage) {
+            reservationsInLocalStorage = JSON.parse(reservationsInLocalStorage);
+        } else {
+            reservationsInLocalStorage = [];
+        }
+
+        //This block of code checks if the user has input values into input fields
+
+        if (reservationName.value == '') {
+            reservationName.focus();
+            reservationName.style.outline = '1px solid red';
+            alert('put in your  name');
+            reservationName.focus();
+            if (reservationName.length <= 1) {
+                reservationName.style.outline = '1px solid red';
+            } else if (userNreservationNameame.length > 1) {
+                reservationName.style.outline = '1px solid green';
+            }
+            return
+        }
+		if (reservationId.value == '') {
+			reservationId.focus();
+            reservationId.style.outline = '1px solid red';
+			if(reservationId.value.length > 3){
+				reservationId.style.outline = '1px solid green';
+
+			}
+            alert('put in your Id');
+            return;
+        }
+        // if (typeof(reservationId.value) == 'string') {
+        //     alert('put in a valid Id');
+        //     return
+        // }
+		if (departureZone.value == 'Select departure Zone') {
+            alert('choose departure');
+            return
+        }
+		if (destinationZone.value == 'Select Destination') {
+            alert('choose Destination');
+            return
+        }
+
+        reservationsInLocalStorage.push(clientReservation);
+        localStorage.setItem('Reservations', JSON.stringify(reservationsInLocalStorage));
+        alert(`${reservationName.value} has made a reservation successfully`);
+        // formElement.reset();
+	});
+}
+if (firstLetter) {
+firstLetter.addEventListener('click', () => {
+	if(userProfileSection.style.display == 'none'){
+		userProfileSection.style.display = 'block';
+		availableAgencies.style.width = 70 + '%';
+		availableAgencies.style.marginLeft = 2.5 + '%';
+	}else{
+		userProfileSection.style.display = 'none';
+		availableAgencies.style.width = 80 + '%';
+		availableAgencies.style.marginLeft = 10 + '%';
+	}
+})
+}
+agencyBold.forEach(elementClicked => {
+	elementClicked.addEventListener('click',e =>{
+		window.location.href = '../pages/reservation.html';
+	})
 });
-// End of show password
 
-let arrayObject = [];
-signupButton.addEventListener('click', event =>{
-      event.preventDefault();
-      const usersInLocalStorage = JSON.parse(localStorage.getItem(arrayObject));
-      const createdAccount = {
-            Name:userName.value,
-            Email: email.value,
-            password :signUpPasswordField.value
-      };
-      arrayObject.push(createdAccount);
-      arrayObject.concat(usersInLocalStorage);
-      window.localStorage.setItem('User',JSON.stringify(arrayObject));
-      formElement.reset();
-      console.log(usersInLocalStorage);
+if (signupButton) {
+	signupButton.addEventListener('click', reactiveFunctions.signUp)
+}
+if (signInBtn) {
+	signInBtn.addEventListener('click', reactiveFunctions.signIn);
+}
+if (signInCheckBox) {
+	signInCheckBox.addEventListener('click', reactiveFunctions.checkPassword);
+}
+const reserveButton = document.querySelector('.reserve');
+if (reserveButton) {
+		
+	reserveButton.addEventListener('click', function(e){
+		createElement('p', {class:'toSignIn'});
+		createElement('button', {class:'toSignInBtn'});
+	});
+}
+
+if (hamburgerButton) {
+	
+hamburgerButton.forEach(button => {
+	button.addEventListener('click', event =>{
+		mobileElement.forEach(mobile =>{
+			mobile.classList.toggle('show-me');
+		});
+		mainBody.forEach(body =>{
+			body.classList.toggle('show-me');
+		});
+		button.classList.toggle('show-me');
+		console.log(`you clicked hamburger`);
+	});
 });
 
+}
+const nameHolder = document.querySelector('p.signin');
+const userInitial = document.querySelector('p.user-name-initial');
+const userLogged = document.querySelector('h1.name');
+//seession storage
+let nameInitial = JSON.parse(sessionStorage.getItem('loggedUser'));
+nameHolder.textContent = nameInitial.nameInitial;
+userInitial.textContent = nameInitial.nameInitial;
+userLogged.textContent = nameInitial.userName;
+function createElement(tagName, attribute = {}) {
+	if(tagName){
+		tagName = tagName;
+	}else{
+		tagName = 'div';
+	}
+	const elementToCreate = document.createElement(tagName);
+
+	for(const [key,value] of Object.entries(attribute)){
+		if(key == 'class'){
+			elementToCreate.classList.add(value);
+		}else{
+			elementToCreate.setAttribute(key,value);
+		}
+	}
+}
+reactiveFunctions

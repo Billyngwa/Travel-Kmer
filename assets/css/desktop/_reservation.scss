@@ -1,0 +1,61 @@
+main.user-profile-main{
+    section.reserve-form{
+        @include container(80%,10%);
+        div.user-reservation-info{
+            display: none;
+            margin-top: 60px;
+            p{
+                @include display-element-flex(null,space-evenly);
+                span{
+                    @include text-style(16px,400,$font-family);
+                    color: black;
+                }
+            }
+        }
+        form{
+            width: 100%;
+            div.client-name{
+                @include display-element-flex(center,space-around);
+                p{
+                    @include container(40%,10%);
+                    label{
+                        @include text-style(16px,400,$font-family);
+                    }
+                    input{
+                        @include text-style(16px,400,$font-family);
+                        outline: none;
+                        border: none;
+                        border-bottom:1px solid rgba(0, 0, 0, 0.219);
+                        margin-bottom: 30px;
+                        @include container(90%,5%);
+                    }
+                }
+            }
+            div.from-and-to{
+                @include display-element-flex(center,space-around);
+                div{
+                    @include container(40%,10%);
+                    select,label{
+                        outline: none;
+                        padding: 2px;
+                        @include text-style(16px,400,$font-family);
+                    }
+                }
+            }
+            div.button-holder{
+                @include container(40%,10%);
+                margin-top: 30px;
+                button{
+                    @include container(30%,30%);
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    // padding: 5px;
+                    background-color: $green;
+                    @include text-style(16px,400,$font-family);
+                    color: white;
+                }
+            }
+        }
+    }
+}

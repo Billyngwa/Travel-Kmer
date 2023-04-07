@@ -282,10 +282,13 @@ ul {
   main section.top-selling .routes {
     display: flex;
     align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
   main section.top-selling .routes .each-route {
     border-radius: 5px;
+    width: 32%;
     padding: 30px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.466);
   }
@@ -1016,6 +1019,280 @@ ul {
     padding: 10px 70px 10px 70px;
     border-radius: 50px;
   }
+  header div.navigation div.logo-nav-user div.search-agency {
+    width: 30%;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form {
+    width: 100%;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form input {
+    width: 70%;
+    padding: 5px 5px 5px 10px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form input::-moz-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.356);
+    padding-left: 5px;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form input:-ms-input-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.356);
+    padding-left: 5px;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.356);
+    padding-left: 5px;
+  }
+  header div.navigation div.logo-nav-user div.search-agency form button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.651);
+    padding: 3px;
+    width: 25%;
+  }
+  div.user-profile {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+  }
+  div.user-profile p.signin {
+    width: 45px;
+    margin-left: 3px;
+    height: 45px;
+    border-radius: 50%;
+    top: 2px;
+    position: absolute;
+    background-color: #21C177;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: "Poppins", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 20%;
+  }
+  main.user-profile-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  main.user-profile-main section.user-profile {
+    width: 20%;
+    margin-left: 2.5%;
+    display: none;
+  }
+  main.user-profile-main section.user-profile div.user-photo_user-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  main.user-profile-main section.user-profile div.user-photo_user-name div.user-photo {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #21C177;
+  }
+  main.user-profile-main section.user-profile div.user-photo_user-name div.user-photo p.user-name-initial {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    border-radius: 50%;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: "Poppins", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 20%;
+  }
+  main.user-profile-main section.user-profile div.user-photo_user-name div.user-name h1.name {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: "Poppins", sans-serif;
+  }
+  main.user-profile-main section.user-profile div.profile-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 5px 0px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  main.user-profile-main section.user-profile div.profile-settings p.setting {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: black;
+  }
+  main.user-profile-main section.user-profile div.profile-settings button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #21C177;
+    color: whitesmoke;
+    padding: 5px;
+    width: 75%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+  }
+  main.user-profile-main section.available-agencies {
+    width: 70%;
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  main.user-profile-main section.available-agencies div.agency {
+    width: 31%;
+    margin-left: 1%;
+    background: linear-gradient(0deg, #21C177, skyblue 30%, rgba(0, 0, 0, 0.342));
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  main.user-profile-main section.available-agencies div.agency:hover {
+    transition: width 1.3s;
+  }
+  main.user-profile-main section.available-agencies div.agency h1.agency-bold {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: "Poppins", sans-serif;
+    color: whitesmoke;
+  }
+}
+@media (max-width: 3000px) and (max-width: 578px) {
+  main.user-profile-main {
+    display: block;
+  }
+  main.user-profile-main section.user-profile {
+    display: none;
+  }
+  main.user-profile-main section.available-agencies {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+  }
+  main.user-profile-main section.available-agencies div.agency {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 3000px) {
+  main.user-profile-main section.reserve-form {
+    width: 80%;
+    margin-left: 10%;
+  }
+  main.user-profile-main section.reserve-form div.user-reservation-info {
+    display: none;
+    margin-top: 60px;
+  }
+  main.user-profile-main section.reserve-form div.user-reservation-info p {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main.user-profile-main section.reserve-form div.user-reservation-info p span {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: black;
+  }
+  main.user-profile-main section.reserve-form form {
+    width: 100%;
+  }
+  main.user-profile-main section.reserve-form form div.client-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main.user-profile-main section.reserve-form form div.client-name p {
+    width: 40%;
+    margin-left: 10%;
+  }
+  main.user-profile-main section.reserve-form form div.client-name p label {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+  }
+  main.user-profile-main section.reserve-form form div.client-name p input {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  main.user-profile-main section.reserve-form form div.from-and-to {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main.user-profile-main section.reserve-form form div.from-and-to div {
+    width: 40%;
+    margin-left: 10%;
+  }
+  main.user-profile-main section.reserve-form form div.from-and-to div select, main.user-profile-main section.reserve-form form div.from-and-to div label {
+    outline: none;
+    padding: 2px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+  }
+  main.user-profile-main section.reserve-form form div.button-holder {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+  main.user-profile-main section.reserve-form form div.button-holder button {
+    width: 30%;
+    margin-left: 30%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #21C177;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: white;
+  }
 }
 @media (max-width: 1200px) {
   body {
@@ -1270,10 +1547,13 @@ ul {
   main section.top-selling .routes {
     display: flex;
     align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
   main section.top-selling .routes .each-route {
     border-radius: 5px;
+    width: 32%;
     padding: 30px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.466);
   }
@@ -2821,6 +3101,9 @@ ul {
   body {
     background-color: rgb(255, 247, 247);
   }
+  body.show-me {
+    overflow-y: hidden;
+  }
   header div.navigation {
     z-index: 10;
     width: 100%;
@@ -2903,6 +3186,52 @@ ul {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+  }
+  .mobile {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.712);
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    padding: 0px 0px 0px 0px;
+    z-index: 20;
+    width: 100%;
+    left: 100%;
+  }
+  .mobile.show-me {
+    left: 0%;
+  }
+  .mobile nav {
+    width: 70%;
+    height: 100%;
+    padding: 30px 0px 30px 0px;
+    background-color: whitesmoke;
+  }
+  .mobile nav ul li {
+    padding: 10px 0px 10px 20px;
+  }
+  .mobile nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: black;
+  }
+  .mobile nav ul li.user button {
+    outline: none;
+    border: none;
+    background-color: #21C177;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  .mobile nav ul li.user button a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: "Poppins", sans-serif;
+    color: white;
   }
   main section.category {
     margin-top: 50px;
