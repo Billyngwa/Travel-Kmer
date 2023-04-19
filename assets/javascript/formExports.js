@@ -29,7 +29,10 @@ export const reactiveFunctions = {
     signIn: function (e) {
         e.preventDefault();
         let obtainedUser = JSON.parse(localStorage.getItem('User'));
-
+        if(localStorage.getItem('User') == null){
+            alert(`No such user in DB`);
+            return;
+        }
         if (emailField.value == '' && signInPasswordField.value == '') {
             alert(`Email and password required`);
             emailField.focus();
@@ -59,9 +62,9 @@ export const reactiveFunctions = {
                 sessionStorage.setItem('loggedUser',JSON.stringify(lastlylogged));
 
                 window.location.replace('../pages/userProfile.html');
-                return
+                return;
             } else {
-               
+             
                 continue
             }
             return
@@ -116,6 +119,8 @@ export const reactiveFunctions = {
                 return
             }
         }
+       
+      
         for (const user of usersInLocalStorage) {
             if (user.Name == userName.value) {
                 alert('USER EXIST');

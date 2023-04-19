@@ -23,7 +23,7 @@ const departureZone = document.querySelector('select#select-from');
 const destinationZone = document.querySelector('select#select-to');
 
 
-if(reserveBtn){
+if(reserveBtn != null){
 	reserveBtn.addEventListener('click',function(event){
 		event.preventDefault();
 		const clientReservation = {
@@ -79,7 +79,7 @@ if(reserveBtn){
         reservationsInLocalStorage.push(clientReservation);
         localStorage.setItem('Reservations', JSON.stringify(reservationsInLocalStorage));
         alert(`${reservationName.value} has made a reservation successfully`);
-        // formElement.reset();
+        formElement.reset();
 	});
 }
 if (firstLetter) {
@@ -122,7 +122,7 @@ if (reserveButton) {
 if (hamburgerButton) {
 	
 hamburgerButton.forEach(button => {
-	button.addEventListener('click', event =>{
+	button.addEventListener('click', (event) =>{
 		mobileElement.forEach(mobile =>{
 			mobile.classList.toggle('show-me');
 		});
