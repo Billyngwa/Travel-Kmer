@@ -1,4 +1,7 @@
 import { reactiveFunctions } from "./formExports.js";
+let departures =  document.querySelectorAll('option.departure');
+let destinations =  document.querySelectorAll('option.destination');
+const regions = ['Yaounde','Douala','Bamenda','Buea','Baffousam','Maroua','Garoua','Ngoundere','Bertoua','Ebolowa'];
 
 const signInCheckBox = document.querySelector('.check_me');// Getting the checkbox as an object
 let signUpPasswordField  = document.querySelector('.sign_up_passwordField');// Getting password field for signup as object
@@ -24,7 +27,7 @@ const destinationZone = document.querySelector('select#select-to');
 let greenHolder = document.querySelector('.green-holder');
 
 
-if(reserveBtn != null){
+if(reserveBtn !=null){
 	reserveBtn.addEventListener('click',function(event){
 		event.preventDefault();
 		const clientReservation = {
@@ -49,7 +52,7 @@ if(reserveBtn != null){
             reservationName.focus();
             if (reservationName.length <= 1) {
                 reservationName.style.outline = '1px solid red';
-            } else if (userNreservationNameame.length > 1) {
+            } else if (reservationName.length > 1) {
                 reservationName.style.outline = '1px solid green';
             }
             return
@@ -68,14 +71,42 @@ if(reserveBtn != null){
         //     alert('put in a valid Id');
         //     return
         // }
-		if (departureZone.value == 'Select departure Zone') {
-            alert('choose departure');
-            return
-        }
-		if (destinationZone.value == 'Select Destination') {
-            alert('choose Destination');
-            return
-        }
+		// if (departureZone.value == 'Select Departure' || departureZone.value == 'choose') {
+        //     alert('choose departure');
+        //     return
+        // }
+		// console.log(departureZone);
+		// if (destinationZone.value == 'Select Destination' ||destinationZone.value == 'choose') {
+        //     alert('choose Destination');
+		// 	destinationZone.focus();
+        //     return
+        // }
+
+       const inScope = regions.includes(departureZone.value)
+	   if(!inScope){
+		alert(`Error with departure Zone`);
+	   }
+		// for(const region of regions){
+		// 	if(departureZone.value !== region){
+		// 		alert(`Error with departure Zone`);
+		// 	}else{
+		// 		alert(`departure is from ${region}`);
+		// 		continue
+		// 	}
+		// 	console.log(region);
+		// }
+		// for(const departPoint of departures){
+		// 	if(departPoint.value != region){
+		// 		alert(`incorrect`);
+		// 		return
+		// 	}
+		// 	// return
+		// }
+		// if (destinationZone.value === destinationZone.value) {
+        //     alert('Destination cannot be same to Departure Please review your Destination or departure');
+		// 	destinationZone.focus();
+        //     return
+        // }
 
         reservationsInLocalStorage.push(clientReservation);
         localStorage.setItem('Reservations', JSON.stringify(reservationsInLocalStorage));
