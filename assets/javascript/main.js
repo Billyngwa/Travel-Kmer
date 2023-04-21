@@ -21,6 +21,7 @@ const reservationName = document.querySelector('#client-name');
 const reservationId = document.querySelector('#client-id');
 const departureZone = document.querySelector('select#select-from');
 const destinationZone = document.querySelector('select#select-to');
+let greenHolder = document.querySelector('.green-holder');
 
 
 if(reserveBtn != null){
@@ -102,10 +103,13 @@ agencyBold.forEach(elementClicked => {
 });
 
 if (signupButton) {
-	signupButton.addEventListener('click', reactiveFunctions.signUp)
+	signupButton.addEventListener('click', reactiveFunctions.signUp);
+	
 }
 if (signInBtn) {
 	signInBtn.addEventListener('click', reactiveFunctions.signIn);
+	
+
 }
 if (signInCheckBox) {
 	signInCheckBox.addEventListener('click', reactiveFunctions.checkPassword);
@@ -138,12 +142,12 @@ hamburgerButton.forEach(button => {
 const nameHolder = document.querySelector('p.signin');
 const userInitial = document.querySelector('p.user-name-initial');
 const userLogged = document.querySelector('h1.name');
-//seession storage
+//session storage
 let nameInitial = JSON.parse(sessionStorage.getItem('loggedUser'));
 nameHolder.textContent = nameInitial.nameInitial;
 userInitial.textContent = nameInitial.nameInitial;
 userLogged.textContent = nameInitial.userName;
-function createElement(tagName, attribute = {}) {
+ function createElement(tagName, attribute = {}) {
 	if(tagName){
 		tagName = tagName;
 	}else{
@@ -159,4 +163,3 @@ function createElement(tagName, attribute = {}) {
 		}
 	}
 }
-reactiveFunctions

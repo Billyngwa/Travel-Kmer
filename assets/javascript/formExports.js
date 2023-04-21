@@ -1,3 +1,4 @@
+
 const signInCheckBox = document.querySelector('.check_me');// Getting the checkbox as an object
 let signUpPasswordField = document.querySelector('.sign_up_passwordField');// Getting password field for signup as object
 let signInPasswordField = document.querySelector('.sign_in_passwordField');// getting password for sign in as object
@@ -8,7 +9,7 @@ let signupButton = document.querySelector('button.signup_btn');
 let formElement = document.querySelector('form');
 const emailField = document.querySelector('#email');
 const signInBtn = document.querySelector('.signin_btn');
-
+let greenHolder = document.querySelector('.green-holder');
 let loginStaus;
 
 export const reactiveFunctions = {
@@ -29,10 +30,7 @@ export const reactiveFunctions = {
     signIn: function (e) {
         e.preventDefault();
         let obtainedUser = JSON.parse(localStorage.getItem('User'));
-        if(localStorage.getItem('User') == null){
-            alert(`No such user in DB`);
-            return;
-        }
+   
         if (emailField.value == '' && signInPasswordField.value == '') {
             alert(`Email and password required`);
             emailField.focus();
@@ -50,7 +48,8 @@ export const reactiveFunctions = {
         }
 
         for (const user of obtainedUser) {
-            if (user.Email == emailField.value && user.password == signInPasswordField.value) {
+            console.log(obtainedUser);
+            if (user.Email === emailField.value && user.password === signInPasswordField.value) {
                 alert(`${user.Name} logged in with success`);
                 loginStaus == true;
 
@@ -75,7 +74,6 @@ export const reactiveFunctions = {
     },
 
     signUp: function (event) {
-        event.preventDefault();
         const createdAccount = {
             Name: userName.value,
             Email: email.value,
@@ -87,7 +85,7 @@ export const reactiveFunctions = {
         } else {
             usersInLocalStorage = [];
         }
-
+console.log(usersInLocalStorage);
         //This block of code checks if the user has input values into input fields
 
         if (userName.value == '') {
@@ -138,6 +136,6 @@ export const reactiveFunctions = {
         usersInLocalStorage.push(createdAccount);
         localStorage.setItem('User', JSON.stringify(usersInLocalStorage));
         alert(`${userName.value} created successfully`);
-        formElement.reset();
+        // formElement.reset();
     }
 };
