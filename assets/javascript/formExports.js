@@ -52,12 +52,15 @@ export const reactiveFunctions = {
             if (user.Email === emailField.value && user.password === signInPasswordField.value) {
                 alert(`${user.Name} logged in with success`);
                 loginStaus == true;
-
+                let uName = user.Name;
+                nameFirst = uName.charAt(0);
+                nameInit =nameFirst + uName.charAt(uName.indexOf(' ')+1);
                 let lastlylogged = {
                     userName: user.Name,
-                    nameInitial: user.Name.charAt()
+                    // nameInitial: user.Name.charAt()
+                    nameInitial: nameInit
                 };
-
+                
                 sessionStorage.setItem('loggedUser',JSON.stringify(lastlylogged));
 
                 window.location.replace('../pages/userProfile.html');
