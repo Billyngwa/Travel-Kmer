@@ -53,12 +53,12 @@ export const reactiveFunctions = {
                 alert(`${user.Name} logged in with success`);
                 loginStaus == true;
                 let uName = user.Name;
-                nameFirst = uName.charAt(0);
-                nameInit =nameFirst + uName.charAt(uName.indexOf(' ')+1);
+              let  nameFirst = uName.charAt(0);
+               const nameInit =nameFirst + uName.charAt(uName.indexOf(' ')+1);
                 let lastlylogged = {
                     userName: user.Name,
                     // nameInitial: user.Name.charAt()
-                    nameInitial: nameInit
+                    nameinitia: nameInit
                 };
                 
                 sessionStorage.setItem('loggedUser',JSON.stringify(lastlylogged));

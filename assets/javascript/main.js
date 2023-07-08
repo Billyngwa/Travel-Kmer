@@ -175,7 +175,7 @@ const userInitial = document.querySelector('p.user-name-initial');
 const userLogged = document.querySelector('h1.name');
 //session storage
 let nameInitial = JSON.parse(sessionStorage.getItem('loggedUser'));
-nameHolder.textContent = nameInitial.nameInitial;
+nameHolder.textContent = nameInitial.nameInitia;
 userInitial.textContent = nameInitial.nameInitial;
 userLogged.textContent = nameInitial.userName;
  function createElement(tagName, attribute = {}) {
